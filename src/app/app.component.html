@@ -20,16 +20,16 @@
     <!-- Links -->
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+          <a routerLink="/home" class="nav-link waves-light" mdbWavesEffect>Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect>Download</a>
+          <a routerLink="/downloads" class="nav-link waves-light" mdbWavesEffect>Download</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect>Overview</a>
+        <a routerLink="/overview" class="nav-link waves-light" mdbWavesEffect>Overview</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect>Papers</a>
+        <a routerLink="/papers" class="nav-link waves-light" mdbWavesEffect>Papers</a>
       </li>
 
     </ul>
@@ -54,10 +54,7 @@
 <!--/.Navbar-->
 
 <div class="content" role="main">
-  <app-downloads></app-downloads>
-  <app-overview></app-overview>
-  <app-papers></app-papers>
-  <app-home></app-home>
+  <router-outlet></router-outlet>
   <!-- Footer -->
   <footer>
     
