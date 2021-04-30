@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PAPERS } from '../papers';
+import { DISSERTATIONS } from '../dissertations';
 
 @Component({
   selector: 'app-papers',
@@ -9,6 +10,7 @@ import { PAPERS } from '../papers';
 export class PapersComponent implements OnInit {
 
   papers = PAPERS;
+  dissertations = DISSERTATIONS;
 
   constructor() { 
   }
