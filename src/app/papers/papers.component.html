@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+
+            <h2>Papers related to Goblint</h2>
+            <ul class="papers">
+                <li *ngFor="let paper of papers">
+                    <a href={{paper.link}}>{{paper.title}}</a>. <em>{{paper.conference}}.</em><br>
+                    {{paper.description}}
+                </li>
+            </ul>
+
+            <h2> Dissertations related to  Goblint</h2>
+            <ul>
+            <li><a href="http://www2.in.tum.de/bib/files/Vojdani10Thesis.pdf">Static Data Race Analysis of Heap-Manipulating C Programs.</a> Vesal Vojdani. PhD thesis. University of Tartu, December 2010.</li>
+            <li><a href="http://www2.in.tum.de/bib/files/apinis14diss.pdf">Frameworks for analyzing multi-threaded C.</a> Kalmer Apinis. PhD thesis. Technische Universität München, June 2014</li>
+            <li><a href="http://www2.in.tum.de/bib/files/diss-schwarz.pdf">Static Analysis of Embedded Software with Priority Scheduling and Interrupts</a> Martin Schwarz. PhD thesis. Technische Universität München, May 2014</li>
+            </ul>
+        </div>
+    </div>
+</div>

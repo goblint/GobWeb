@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+/* SCSS HEX */
+$imperial-red: #e63946ff;
+$honeydew: #f1faeeff;
+$powder-blue: #a8dadcff;
+$celadon-blue: #457b9dff;
+$prussian-blue: #1d3557ff;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+  color: $prussian-blue;
+}
+
+p {
+  margin: 0;
+}
+a {
+  color: $celadon-blue;
+}
