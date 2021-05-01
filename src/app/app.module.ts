@@ -8,6 +8,7 @@ import { PapersComponent } from './papers/papers.component';
 import { OverviewComponent } from './overview/overview.component';
 import { DownloadsComponent } from './downloads/downloads.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
     HomeComponent,
     PapersComponent,
     OverviewComponent,
-    DownloadsComponent
+    DownloadsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

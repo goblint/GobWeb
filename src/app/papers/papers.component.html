@@ -1,21 +1,14 @@
-<div class="container">
-    <div class="row">
-        <div class="col-sm">
+<h2>Papers related to Goblint</h2>
+<ul class="papers">
+    <li *ngFor="let paper of papers">
+        <a href={{paper.link}}>{{paper.title}}</a>. <em>{{paper.conference}}.</em><br>
+        {{paper.description}}
+    </li>
+</ul>
 
-            <h2>Papers related to Goblint</h2>
-            <ul class="papers">
-                <li *ngFor="let paper of papers">
-                    <a href={{paper.link}}>{{paper.title}}</a>. <em>{{paper.conference}}.</em><br>
-                    {{paper.description}}
-                </li>
-            </ul>
-
-            <h2> Dissertations related to  Goblint</h2>
-            <ul class="dissertations">
-                <li *ngFor="let dissertation of dissertations">
-                    <a href={{dissertation.link}}>{{dissertation.title}}</a>. {{dissertation.author}}. {{dissertation.description}}. {{dissertation.university}}. {{dissertation.date}}
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+<h2> Dissertations related to  Goblint</h2>
+<ul class="dissertations">
+    <li *ngFor="let dissertation of dissertations">
+        <a href={{dissertation.link}}>{{dissertation.title}}</a>. {{dissertation.author}}. {{dissertation.description}}. {{dissertation.university}}. {{dissertation.date}}
+    </li>
+</ul>

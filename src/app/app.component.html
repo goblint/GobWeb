@@ -1,60 +1,19 @@
-<!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color" mdbStickyHeader [containerInside]="false">
-
-  <!-- Navbar brand -->
-  <mdb-navbar-brand class="sticky-top">
-    <a class="navbar-brand" href="#">
-      <img
-        alt="Angular Logo"
-        src="assets/images/goblint_icon_white.png"
-        alt="Goblint" 
-        height="40" 
-        id="goblint"
-      />
-    </a>
-  </mdb-navbar-brand>
-
-  <!-- Collapsible content -->
-  <links>
-
-    <!-- Links -->
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-          <a routerLink="/home" class="nav-link waves-light" mdbWavesEffect>Home</a>
-      </li>
-      <li class="nav-item">
-          <a routerLink="/downloads" class="nav-link waves-light" mdbWavesEffect>Download</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="/overview" class="nav-link waves-light" mdbWavesEffect>Overview</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="/papers" class="nav-link waves-light" mdbWavesEffect>Papers</a>
-      </li>
-
-    </ul>
-    <!-- Links -->
-
-    <ul class="navbar-nav ml-auto nav-flex-icons">
-      <li class="nav-item">
-        <a class="nav-link" href="http://www.cs.ut.ee/eng">
-          <img src="assets/images/1200px-Tartu_logo.png" alt="Tartu Logo" height="40" />
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://www.in.tum.de/en.html">
-          <img src="assets/images/TUM_Logo_weiss_rgb_s.svg" alt="TUM Logo" height="40" />
-        </a>
-      </li>
-    </ul>
-  </links>
-  <!-- Collapsible content -->
-
-</mdb-navbar>
-<!--/.Navbar-->
+<app-navbar></app-navbar>
 
 <div class="content" role="main">
-  <router-outlet></router-outlet>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+  </div>
+
   <!-- Footer -->
   <footer>
     
