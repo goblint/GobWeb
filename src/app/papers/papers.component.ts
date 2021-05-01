@@ -12,6 +12,9 @@ export class PapersComponent implements OnInit {
   papers = PAPERS;
   dissertations = DISSERTATIONS;
 
+  headElementsPapers = ['Title', 'Conference'];
+  headElementsDissertations = ['Title', 'Date'];
+
   constructor() { 
   }
 
