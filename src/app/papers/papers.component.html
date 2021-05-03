@@ -1,38 +1,52 @@
-<h2>Papers related to Goblint</h2>
-    <table mdbTable>
-        <thead>
+ 
+<div class="row d-flex justify-content-center">
+    <h2 class="m-5">Papers related to Goblint</h2> 
+</div> 
+<div class="row d-flex justify-content-center">
+    <table id="tablePapers" mdbTable>
+        <thead class="">
         <tr>
-            <th *ngFor="let head of headElementsPapers" scope="col">{{head}} </th>
+            <th *ngFor="let head of headElementsPapers; let i = index" [mdbTableSort]="papers" [sortBy]="headElementsPapers[i]"
+                scope="col" class={{width[i]}}>{{head | titlecase}} <mdb-icon fas icon="sort"></mdb-icon>
+            </th>
         </tr>
         </thead>
         <tbody>
-        <tr mdbTableCol *ngFor="let paper of papers">
-            <td>
-                <a href={{paper.link}}>{{paper.title}}</a><br>
+        <tr mdbTableCol *ngFor="let paper of papers; let i = index">
+            <td class={{width[i]}}>
+                <a href={{paper.link}} class="h6">{{paper.title}}</a><br>
                 {{paper.description}}
             </td>
             <td><em>{{paper.conference}}</em></td>
+            <td>{{paper.year}}</td>
         </tr>
         </tbody>
     </table>
+</div>
 
-<h2> Dissertations related to  Goblint</h2>
-    <table mdbTable>
+<div class="row d-flex justify-content-center">
+    <h2 class="m-5"> Dissertations related to  Goblint</h2>
+</div>
+<div class="row d-flex justify-content-center">
+    <table mdbTable id="tableDissertations">
         <thead>
         <tr>
-            <th *ngFor="let head of headElementsDissertations" scope="col">{{head}} </th>
+            <th *ngFor="let head of headElementsDissertations; let i = index" aria-controls="tableDissertations" scope="col" [mdbTableSort]="dissertations" [sortBy]="headElementsDissertations[i]" class="h5" scope="col">
+                {{head}} <mdb-icon fas icon="sort"></mdb-icon>
+            </th>
         </tr>
         </thead>
         <tbody>
         <tr mdbTableCol *ngFor="let dissertation of dissertations">
             <td>
-                <a href={{dissertation.link}}>{{dissertation.title}}</a><br>
+                <a href={{dissertation.link}} class="h6">{{dissertation.title}}</a><br>
                 {{dissertation.author}}. {{dissertation.description}}. {{dissertation.university}}.
             </td>
             <td><em>{{dissertation.date}}</em></td>
         </tr>
         </tbody>
     </table>
+</div>
 
 <!-- <h2>Papers related to Goblint</h2>
 <ul class="papers">

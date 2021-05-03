@@ -9,16 +9,20 @@ import { DISSERTATIONS } from '../dissertations';
 })
 export class PapersComponent implements OnInit {
 
-  papers = PAPERS;
-  dissertations = DISSERTATIONS;
+  papers: any = []; 
+  dissertations: any = [];
 
-  headElementsPapers = ['Title', 'Conference'];
+  headElementsPapers = ['Title', 'Conference', 'Year'];
+  width = ['col-md-5', 'col-md-1', 'col-md-1'];
   headElementsDissertations = ['Title', 'Date'];
 
   constructor() { 
   }
 
   ngOnInit(): void {
+    this.papers = PAPERS;
+    this.dissertations = DISSERTATIONS;
+    
   }
 
 }
