@@ -3,7 +3,7 @@
 
     <!-- Navbar brand -->
     <mdb-navbar-brand>
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand nav-link waves-light" routerLink="/home">
         <img
           alt="Goblint Logo"
           src="assets/images/goblint_icon_white.png"
@@ -19,16 +19,16 @@
   
       <!-- Links -->
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item" routerLinkActive="active">
             <a routerLink="/home" class="nav-link waves-light" mdbWavesEffect>Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" routerLinkActive="active">
             <a routerLink="/downloads" class="nav-link waves-light" mdbWavesEffect>Download</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" routerLinkActive="active">
           <a routerLink="/overview" class="nav-link waves-light" mdbWavesEffect>Overview</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" routerLinkActive="active">
           <a routerLink="/papers" class="nav-link waves-light" mdbWavesEffect>Papers</a>
         </li>
   
