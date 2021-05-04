@@ -14,11 +14,16 @@
         <tbody>
         <tr mdbTableCol *ngFor="let paper of papers; let i = index">
             <td class={{width[i]}}>
-                <a href={{paper.link}} class="h6">{{paper.title}}</a><br>
+                <a href={{paper.link}} class="h6">{{paper.title}}</a> 
                 {{paper.description}}
             </td>
             <td><em>{{paper.conference}}</em></td>
             <td>{{paper.year}}</td>
+            <td>
+                <button  mdbBtn type="button" class="btn btn-light" outline="false" mdbWavesEffect (click)="copyMessage('citation')" value="click to copy" >
+                    <mdb-icon far icon="copy"></mdb-icon>
+                </button><br>
+            </td>
         </tr>
         </tbody>
     </table>

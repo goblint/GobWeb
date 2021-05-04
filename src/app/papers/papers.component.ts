@@ -12,7 +12,7 @@ export class PapersComponent implements OnInit {
   papers: any = []; 
   dissertations: any = [];
 
-  headElementsPapers = ['Title', 'Conference', 'Year'];
+  headElementsPapers = ['Title', 'Conference', 'Year', 'Citation'];
   width = ['col-md-5', 'col-md-1', 'col-md-1'];
   headElementsDissertations = ['Title', 'Date'];
 
