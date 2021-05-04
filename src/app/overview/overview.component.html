@@ -1,19 +1,34 @@
+<div class="row d-flex justify-content-center">
+    <h2 class="m-5">Overview of Goblint Features</h2><br>
+</div>
+<div class="row d-flex justify-content-center">
+    <div class="col"><h4>Race detection</h4></div>
+    <div class="col"><h4>Path-sensitivity</h4></div>
+    <div class="col"><h4>Multi-threaded C programs</h4></div>
+    <div class="col"><h4>Reader/writer locks</h4></div>
+    <div class="w-100"></div>
+    <div class="col"><p class="flex-grow-1"> The main application of this framework is for race detection. 
+        Goblint checks  that all accesses to shared memory are protected by a common mutex.</p></div>
+    <div class="col"><p class="flex-grow-1"> Goblint is path-sensitive, so it deals with conditional locking schemes as well as possibly failing, 
+        interruptible and probing locking primitives.</p></div>
+    <div class="col"><p class="flex-grow-1"> Goblint is an analyzer of multi-threaded C programs. 
+        It computes a sound upper approximation of all possible thread interleavings using global invariants for shared data.</p>
+    </div>
+    <div class="col"><p class="flex-grow-1"> Goblint also supports reader/writer locks.</p></div>
+</div>
 
-<h2>Overview of Goblint Features</h2>
+<div class="row d-flex justify-content-center">
+    <h2 class="m-5">Example</h2>
+</div>
+<div class="row d-flex justify-content-center">
+    <p class="text-justify">The following screenshot illustrates the result of running the analyzer on a simple program with a static array of mutexes. </p>
+    <a href="images/screen.png" target="_self"><img src="assets/images/screen.png" alt="Screenshot" width="720" height="522" class="m-5"/></a>
+    <p class="text-justify">The safe incrementation function increases an element in the data array while acquiring the corresponding mutex; however, 
+        the main thread erroneously increments the third element while having locked the fourth lock.</p>
+        
+    <p class="text-justify">As the example shows, Goblint not only tracks the flow of locks in and out of functions, 
+        but carefully considers the values and equalities between indexing variables to infer correlations. 
+    </p> 
+</div>
 
-<p>Goblint is an analyzer of multi-threaded C programs. 
-    It computes a sound upper approximation of all possible thread interleavings using global invariants for shared data. 
-    The main application of this framework is for race detection. 
-    Goblint checks  that all accesses to shared memory are protected by a common mutex.</p>
-
-<p>The following screenshot illustrates the result of running the analyzer on a simple program with a static array of mutexes. </p>
-
-<a href="images/screen.png" target="_self"><img src="images/screen.png" alt="Screenshot" width="720" height="522" class="screen" /></a>
-
-<p>The safe incrementation function increases an element in the data array while acquiring the corresponding mutex; however, 
-    the main thread erroneously increments the third element while having locked the fourth lock.</p>
-    
-<p>As the example shows, Goblint not only tracks the flow of locks in and out of functions, 
-    but carefully considers the values and equalities between indexing variables to infer correlations. 
-    Additionally, Goblint is path-sensitive, so it deals with conditional locking schemes as well as possibly failing, 
-    interruptible and probing locking primitives. It also supports reader/writer locks.</p>
+<app-authors></app-authors>
