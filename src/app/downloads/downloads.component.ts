@@ -17,7 +17,17 @@ export class DownloadsComponent implements OnInit {
     let myContainer = <HTMLInputElement>document.getElementById(elToCopy);
     let val = myContainer.value;
     console.log(myContainer.value);
-    val= "@inproceedings\{Goblint2016\,\}";
+    val= "\@inproceedings\{Goblint2016\,\n\
+      author    = \{Vesal Vojdani and Kalmer Apinis and Vootele R\{\\\~\{o\}\}tov and\n\
+                  Helmut Seidl and Varmo Vene and Ralf Vogler\}\,\n\
+      title     = \{Static race detection for device drivers: the Goblint approach\}\,\n\
+      booktitle = \{Proceedings of the 31st \{IEEE\/ACM\} International Conference on \n\
+                  Automated Software Engineering, \{ASE\} 2016\}\,\n\
+      pages     = \{391--402\}\,\n\
+      publisher = \{\{ACM\}\}\,\n\
+      year      = \{2016\}\,\n\
+      doi       = \{10.1145\/2970276.2970337\}\n\
+  \}";
     const selBox = document.createElement('textarea');
     selBox.style.position = 'fixed';
     selBox.style.left = '0';
