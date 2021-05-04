@@ -9,6 +9,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { DownloadsComponent } from './downloads/downloads.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AuthorsComponent } from './authors/authors.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     PapersComponent,
     OverviewComponent,
     DownloadsComponent,
-    NavbarComponent
+    NavbarComponent,
+    AuthorsComponent
   ],
   imports: [
     BrowserModule,
