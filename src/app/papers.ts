@@ -2,6 +2,13 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   { 
+  link: 'https://europepmc.org/article/pmc/pmc7984535', 
+  title: 'Goblint: Thread-Modular Abstract Interpretation Using Side-Effecting Constraints:(Competition Contribution)', 
+  conference: 'ETAPS', 
+  year: 2021,
+  description: 'Explains the verification approach used in Goblint, its architecture, strengths and weaknesses.'
+  },
+  { 
   link: 'https://link.springer.com/chapter/10.1007/978-3-030-41103-9_5', 
   title: 'Incremental Abstract Interpretation', 
   conference: 'LNCS', 
