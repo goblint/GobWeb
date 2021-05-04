@@ -1,7 +1,7 @@
 <div class="row d-flex justify-content-center">
     <h2 class="m-5">Overview of Goblint Features</h2><br>
 </div>
-<div class="row d-flex justify-content-center">
+<div class="row d-flex justify-content-center mb-5">
     <div class="col"><h4>Race detection</h4></div>
     <div class="col"><h4>Path-sensitivity</h4></div>
     <div class="col"><h4>Multi-threaded C programs</h4></div>
@@ -10,11 +10,25 @@
     <div class="col"><p class="flex-grow-1"> The main application of this framework is for race detection. 
         Goblint checks  that all accesses to shared memory are protected by a common mutex.</p></div>
     <div class="col"><p class="flex-grow-1"> Goblint is path-sensitive, so it deals with conditional locking schemes as well as possibly failing, 
-        interruptible and probing locking primitives.</p></div>
+        interruptible and probing locking primitives. Mutexes may be handled both pathsensitively and symbolically.</p></div>
     <div class="col"><p class="flex-grow-1"> Goblint is an analyzer of multi-threaded C programs. 
         It computes a sound upper approximation of all possible thread interleavings using global invariants for shared data.</p>
     </div>
     <div class="col"><p class="flex-grow-1"> Goblint also supports reader/writer locks.</p></div>
+</div>
+<div class="row d-flex justify-content-center">
+    <div class="col"><h4>Reachability safety</h4></div>
+    <div class="col"><h4>Handling pointers</h4></div>
+    <div class="col"><h4>Partitioning</h4></div>
+    <div class="col"><h4>No overflows</h4></div>
+    <div class="w-100"></div>
+    <div class="col"><p class="flex-grow-1"> Reachability is mainly determined using value analysis, which, for integers, employs abstract domains based on intervals and exclusion sets.</p>
+    </div>
+    <div class="col"><p class="flex-grow-1"> The value analysis also handles pointers (computing points-to information), heap memory (using allocation-site abstraction), structs, unions and arrays.</p></div>
+    <div class="col"><p class="flex-grow-1">  The abstraction of arrays employs partitioning by the symbolic expression that is used to index into the array. On top of that, both global variables and heap-allocated memory are partitioned into disjoint regions</p>
+    </div>
+    <div class="col"><p class="flex-grow-1"> The sound interval analysis is implemented using arbitrary precision integers. If the interval for an expression lies completely in the value range
+        of its signed integer type, no overflow can occur at this location.</p></div>
 </div>
 
 <div class="row d-flex justify-content-center">
