@@ -1,4 +1,18 @@
 <div class="row d-flex justify-content-center">
+    <h2 class="m-5">Architecture</h2><br>
+</div>
+<div class="row d-flex justify-content-center mb-5">
+    <div class="col"><p> 
+        Goblint is implemented in OCaml and uses an updated fork of CIL as its parser frontend for the C language.
+        The architecture of Goblint is designed to be modular. 
+        Analyses, which are defined by their abstract domains and transfer functions, can be activated via runtime configuration options. 
+        A flexible query system allows for communication between analyses. 
+        Together, the combined analyses and the control-flow graphs of the functions in the program provide the side-effecting constraint system, 
+        which is solved by some local generic solver. 
+        Post-processing the solution yields results for the analysis.
+    </p></div>
+</div>
+<div class="row d-flex justify-content-center">
     <h2 class="m-5">Overview of Goblint Features</h2><br>
 </div>
 <div class="row d-flex justify-content-center mb-5">
