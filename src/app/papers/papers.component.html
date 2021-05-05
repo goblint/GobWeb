@@ -2,19 +2,19 @@
 <div class="row d-flex justify-content-center">
     <h2 class="m-5">Papers related to Goblint</h2> 
 </div> 
-<div class="row d-flex justify-content-center">
+<div class="row d-flex justify-content-center table-responsive">
     <table id="tablePapers" mdbTable>
-        <thead class="">
+        <thead>
         <tr>
             <th *ngFor="let head of headElementsPapers; let i = index" [mdbTableSort]="papers" [sortBy]="headElementsPapers[i]"
-                scope="col" class={{width[i]}}>{{head | titlecase}} <mdb-icon fas icon="sort"></mdb-icon>
+                scope="col">{{head | titlecase}} <mdb-icon fas icon="sort"></mdb-icon>
             </th>
         </tr>
         </thead>
         <tbody>
         <tr mdbTableCol *ngFor="let paper of papers; let i = index">
-            <td class={{width[i]}}>
-                <a href={{paper.link}} class="h6">{{paper.title}}</a> 
+            <td>
+                <a href={{paper.link}} class="h6">{{paper.title}}</a> <br>
                 {{paper.description}}
             </td>
             <td><em>{{paper.conference}}</em></td>
@@ -32,12 +32,12 @@
 <div class="row d-flex justify-content-center">
     <h2 class="m-5"> Dissertations related to  Goblint</h2>
 </div>
-<div class="row d-flex justify-content-center">
+<div class="row d-flex justify-content-center table-responsive">
     <table mdbTable id="tableDissertations">
         <thead>
         <tr>
-            <th *ngFor="let head of headElementsDissertations; let i = index" aria-controls="tableDissertations" scope="col" [mdbTableSort]="dissertations" [sortBy]="headElementsDissertations[i]" class="h5" scope="col">
-                {{head}} <mdb-icon fas icon="sort"></mdb-icon>
+            <th *ngFor="let head of headElementsDissertations; let i = index" aria-controls="tableDissertations" scope="col" [mdbTableSort]="dissertations" [sortBy]="headElementsDissertations[i]" scope="col">
+                {{head | titlecase}} <mdb-icon fas icon="sort"></mdb-icon>
             </th>
         </tr>
         </thead>
