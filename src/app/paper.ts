@@ -4,4 +4,5 @@ export interface Paper {
   conference: string;
   year: number;
   description: string;
+  citation: string;
 }

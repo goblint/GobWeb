@@ -20,7 +20,7 @@
             <td><em>{{paper.conference}}</em></td>
             <td>{{paper.year}}</td>
             <td>
-                <button  mdbBtn type="button" class="btn btn-light" outline="false" mdbWavesEffect (click)="copyMessage('citation')" value="click to copy" >
+                <button  mdbBtn type="button" class="btn btn-light" outline="false" mdbWavesEffect [cdkCopyToClipboard]="paper.citation" [cdkCopyToClipboardAttempts]="7" value="click to copy" >
                     <mdb-icon far icon="copy"></mdb-icon>
                 </button><br>
             </td>

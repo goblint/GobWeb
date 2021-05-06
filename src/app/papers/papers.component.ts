@@ -21,7 +21,6 @@ export class PapersComponent implements OnInit {
   ngOnInit(): void {
     this.papers = PAPERS;
     this.dissertations = DISSERTATIONS;
-    
   }
 
 }
