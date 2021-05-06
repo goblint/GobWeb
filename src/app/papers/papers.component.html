@@ -1,56 +1,89 @@
- 
 <div class="row d-flex justify-content-center">
-    <h2 class="m-5">Papers related to Goblint</h2> 
-</div> 
+  <h2 class="m-5">Papers related to Goblint</h2>
+</div>
 <div class="row d-flex justify-content-center table-responsive">
-    <table id="tablePapers" mdbTable>
-        <thead>
-        <tr>
-            <th *ngFor="let head of headElementsPapers; let i = index" [mdbTableSort]="papers" [sortBy]="headElementsPapers[i]"
-                scope="col">{{head | titlecase}} <mdb-icon fas icon="sort"></mdb-icon>
-            </th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr mdbTableCol *ngFor="let paper of papers; let i = index">
-            <td>
-                <a href={{paper.link}} class="h6">{{paper.title}}</a> <br>
-                {{paper.description}}
-            </td>
-            <td><em>{{paper.conference}}</em></td>
-            <td>{{paper.year}}</td>
-            <td>
-                <button  mdbBtn type="button" class="btn btn-light" outline="false" mdbWavesEffect [cdkCopyToClipboard]="paper.citation" [cdkCopyToClipboardAttempts]="7" value="click to copy" >
-                    <mdb-icon far icon="copy"></mdb-icon>
-                </button><br>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+  <table id="tablePapers" mdbTable>
+    <thead>
+      <tr>
+        <th *ngFor="let head of headElementsPapers; let i = index" scope="col">
+          <a
+            *ngIf="head !== 'citation'"
+            [mdbTableSort]="papers"
+            [sortBy]="headElementsPapers[i]"
+          >
+            {{ head | titlecase }}
+          </a>
+          <a style="cursor: default" *ngIf="head === 'citation'">
+            {{ head | titlecase }}</a
+          >
+          <mdb-icon fas icon="sort" *ngIf="head !== 'citation'"></mdb-icon>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr mdbTableCol *ngFor="let paper of papers; let i = index">
+        <td>
+          <a href="{{ paper.link }}" class="h6">{{ paper.title }}</a> <br />
+          {{ paper.description }}
+        </td>
+        <td>
+          <em>{{ paper.conference }}</em>
+        </td>
+        <td>{{ paper.year }}</td>
+        <td>
+          <button
+            mdbBtn
+            type="button"
+            class="btn btn-light"
+            outline="false"
+            mdbWavesEffect
+            [cdkCopyToClipboard]="paper.citation"
+            [cdkCopyToClipboardAttempts]="7"
+            value="click to copy"
+          >
+            <mdb-icon far icon="copy"></mdb-icon></button
+          ><br />
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <div class="row d-flex justify-content-center">
-    <h2 class="m-5"> Dissertations related to  Goblint</h2>
+  <h2 class="m-5">Dissertations related to Goblint</h2>
 </div>
 <div class="row d-flex justify-content-center table-responsive">
-    <table mdbTable id="tableDissertations">
-        <thead>
-        <tr>
-            <th *ngFor="let head of headElementsDissertations; let i = index" aria-controls="tableDissertations" scope="col" [mdbTableSort]="dissertations" [sortBy]="headElementsDissertations[i]" scope="col">
-                {{head | titlecase}} <mdb-icon fas icon="sort"></mdb-icon>
-            </th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr mdbTableCol *ngFor="let dissertation of dissertations">
-            <td>
-                <a href={{dissertation.link}} class="h6">{{dissertation.title}}</a><br>
-                {{dissertation.author}}. {{dissertation.description}}. {{dissertation.university}}.
-            </td>
-            <td><em>{{dissertation.date}}</em></td>
-        </tr>
-        </tbody>
-    </table>
+  <table mdbTable id="tableDissertations">
+    <thead>
+      <tr>
+        <th
+          *ngFor="let head of headElementsDissertations; let i = index"
+          aria-controls="tableDissertations"
+          scope="col"
+          [mdbTableSort]="dissertations"
+          [sortBy]="headElementsDissertations[i]"
+          scope="col"
+        >
+          {{ head | titlecase }} <mdb-icon fas icon="sort"></mdb-icon>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr mdbTableCol *ngFor="let dissertation of dissertations">
+        <td>
+          <a href="{{ dissertation.link }}" class="h6">{{
+            dissertation.title
+          }}</a
+          ><br />
+          {{ dissertation.author }}. {{ dissertation.description }}.
+          {{ dissertation.university }}.
+        </td>
+        <td>
+          <em>{{ dissertation.date }}</em>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <!-- <h2>Papers related to Goblint</h2>
