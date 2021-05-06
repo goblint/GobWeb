@@ -2,7 +2,7 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   { 
-  link: 'https://europepmc.org/article/pmc/pmc7984535', 
+  link: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7984535/pdf/978-3-030-72013-1_Chapter_28.pdf/?tool=EBI', 
   title: 'Goblint: Thread-Modular Abstract Interpretation Using Side-Effecting Constraints:(Competition Contribution)', 
   conference: 'TACAS', 
   year: 2021,
@@ -37,7 +37,7 @@ export const PAPERS: Paper[] = [
   description: 'Describes how to make solvers always terminate for interprocedural analysis.'
   },
   { 
-  link: 'http://goblint.in.tum.de/papers/flags.pdf', 
+  link: '/assets/papers/flags.pdf', 
   title: 'Precise Analysis of Value-Dependent Synchronization in Priority Scheduled Programs', 
   conference: 'VMCAI', 
   year: 2014,
@@ -51,14 +51,14 @@ export const PAPERS: Paper[] = [
   description: 'We had long been searching for a way to introduce widening/narrowings into the demand-driven solvers used in Goblint. This paper shows how to do it.'
   },
   { 
-  link: 'http://goblint.in.tum.de/papers/side.pdf', 
+  link: '/assets/papers/side.pdf', 
   title: 'Side-effecting constraint systems: A Swiss army knife for program analysis', 
   conference: 'APLAS', 
   year: 2012,
   description: 'Generalizes the global invariant approach to arbitrary side-effecting constraints. This is the theoretical foundation of the Goblint analysis framework.'
   },
   { 
-  link: 'http://goblint.in.tum.de/papers/class.pdf', 
+  link: '/assets/papers/class.pdf', 
   title: 'Class-modular, class-escape and points-to analysis for object-oriented languages', 
   conference: 'NFM', 
   year: 2012,
@@ -72,35 +72,35 @@ export const PAPERS: Paper[] = [
   description: 'Presents the techniques the analyzer uses to analyze OSEK programs.'
   },
   { 
-  link: 'http://goblint.in.tum.de/papers/coq.pdf', 
+  link: '/assets/papers/coq.pdf', 
   title: 'Verifying a Local Generic Solver in Coq', 
   conference: 'SAS', 
   year: 2010,
   description: 'A verified version of the local solver used in Goblint.'
   },
   { 
-  link: 'http://goblint.in.tum.de/papers/regions.pdf', 
+  link: '/assets/papers/regions.pdf', 
   title: 'Region analysis for race detection', 
   conference: 'SAS', 
   year: 2009,
   description: 'This paper explains the region analysis method that we use to deal with medium-grained locking.'
   },
   { 
-  link: 'http://goblint.in.tum.de/papers/must-alias.pdf', 
+  link: '/assets/papers/must-alias.pdf', 
   title: 'A smooth combination of linear and Herbrand equalities for polynomial time must-alias analysis', 
   conference: 'FM', 
   year: 2009,
   description: 'Presents the key ideas for dealing with per-element locking'
   },
   { 
-  link: 'http://goblint.in.tum.de/papers/goblint.pdf', 
+  link: '/assets/papers/goblint.pdf', 
   title: 'Goblint: path-sensitive data race analysis', 
   conference: 'SPLST', 
   year: 2007,
   description: 'Overview of the race detection analysis and how it uses property-simulation to obtain a path-sensitive analysis.'
   },
   { 
-  link: 'http://goblint.in.tum.de/papers/invariants.pdf', 
+  link: '/assets/papers/invariants.pdf', 
   title: 'Global invariants for analysing multi-threaded applications', 
   conference: 'NWPT', 
   year: 2002,
