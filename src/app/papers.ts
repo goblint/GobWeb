@@ -330,7 +330,15 @@ export const PAPERS: Paper[] = [
   conference: 'SPLST', 
   year: 2007,
   description: 'Overview of the race detection analysis and how it uses property-simulation to obtain a path-sensitive analysis.',
-  citation: ''
+  citation: '\@article\{article\,\n\
+    author = \{Vojdani\, Vesal and Vene\, Varmo\}\,\n\
+    year = \{2009\}\,\n\
+    month = \{01\}\,\n\
+    pages = \{\}\,\n\
+    title = \{Goblint: Path-Sensitive Data Race Analysis\}\,\n\
+    volume = \{30\}\,\n\
+    journal = \{Annales Universitatis Scientiarum Budapestinensis de Rolando Eötvös Nominatae. Sectio Computatorica\}\n\
+    \}\n'
   },
   { 
   link: '/assets/papers/invariants.pdf', 
@@ -338,6 +346,12 @@ export const PAPERS: Paper[] = [
   conference: 'NWPT', 
   year: 2002,
   description: 'Describes the underlying nested-fixpoint style thread-modular analysis engine that enables us to analyze multi-threaded programs soundly.',
-  citation: ''
+  citation: '\@article\{article\,\n\
+    author = \{Seidl\, Helmut and Vene\, Varmo\}\,\n\
+    year = \{2004\}\,\n\
+    month = \{01\}\,\n\
+    pages = \{\}\,\n\
+    title = \{Global Invariants for Analyzing Multi-threaded Applications\}\n\
+    \}\n'
   }
 ];
