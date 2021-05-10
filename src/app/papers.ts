@@ -2,11 +2,11 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   { 
-  link: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7984535/pdf/978-3-030-72013-1_Chapter_28.pdf/?tool=EBI', 
+  link: 'https://link.springer.com/chapter/10.1007%2F978-3-030-72013-1_28', 
   title: 'Goblint: Thread-Modular Abstract Interpretation Using Side-Effecting Constraints:(Competition Contribution)', 
   conference: 'TACAS', 
   year: 2021,
-  description: 'Explains the verification approach used in Goblint, its architecture, strengths and weaknesses.',
+  description: 'Reports on Goblint\'s participation in SV-Comp.',
   citation: '\@article \{PMCID:PMC7984535\,\n\
     Title = \{Goblint: Thread-Modular Abstract Interpretation Using Side-Effecting Constraints : (Competition Contribution)\}\,\n\
     Author = \{Saan\, Simmo and Schwarz\, Michael and Apinis\, Kalmer and Erhard\, Julian and Seidl\, Helmut and Vogler\, Ralf and Vojdani\, Vesal\}\,\n\
