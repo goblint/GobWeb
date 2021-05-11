@@ -330,15 +330,14 @@ export const PAPERS: Paper[] = [
   conference: 'SPLST', 
   year: 2007,
   description: 'Overview of the race detection analysis and how it uses property-simulation to obtain a path-sensitive analysis.',
-  citation: '\@article\{article\,\n\
-    author = \{Vojdani\, Vesal and Vene\, Varmo\}\,\n\
+  citation: '\@article\{VojdaniVene09\,\n\
+    author = \{Vesal Vojdani and Varmo Vene\}\,\n\
+    title = \{Goblint: Path-sensitive data race analysis\}\,\n\
+    journal = \{Annales Univ. Sci. Budapest.\, Sect. Comp.\}\,\n\
+    volume = 30\,\n\
+    pages = \{141--155\}\,\n\
     year = \{2009\}\,\n\
-    month = \{01\}\,\n\
-    pages = \{\}\,\n\
-    title = \{Goblint: Path-Sensitive Data Race Analysis\}\,\n\
-    volume = \{30\}\,\n\
-    journal = \{Annales Universitatis Scientiarum Budapestinensis de Rolando Eötvös Nominatae. Sectio Computatorica\}\n\
-    \}\n'
+  \}\n'
   },
   { 
   link: '/assets/papers/invariants.pdf', 
@@ -346,12 +345,14 @@ export const PAPERS: Paper[] = [
   conference: 'NWPT', 
   year: 2002,
   description: 'Describes the underlying nested-fixpoint style thread-modular analysis engine that enables us to analyze multi-threaded programs soundly.',
-  citation: '\@article\{article\,\n\
-    author = \{Seidl\, Helmut and Vene\, Varmo\}\,\n\
-    year = \{2004\}\,\n\
-    month = \{01\}\,\n\
-    pages = \{\}\,\n\
-    title = \{Global Invariants for Analyzing Multi-threaded Applications\}\n\
-    \}\n'
+  citation: '\@article\{Seidl03\,\n\
+    author = \{Helmut Seidl and Varmo Vene and Markus M\{\\\"u\}ller-Olm\}\,\n\
+    title = \{Global invariants for analyzing multithreaded applications\}\,\n\
+    journal = \{Proc. of the Estonian Academy of Sciences: Phys.\, Math.\}\,\n\
+    volume = \{52\}\,\n\
+    number = \{4\}\,\n\
+    pages = \{413--436\}\,\n\
+    year = \{2003\}\,\n\
+  \}\n'
   }
 ];
