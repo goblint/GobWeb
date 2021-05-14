@@ -13,3 +13,28 @@
             Construction (<a href="http://www2.in.tum.de">Helmut Seidl</a>) and University of Tartu's Laboratory for Software Science (<a href="http://sws.cs.ut.ee">Vesal Vojdani</a>). It is distributed under the MIT license. </p>
     </div>
 </div>
+
+<div class="row d-flex justify-content-center">
+    <div class="col-md-3 col-sm-6 mt-5" *ngFor="let author of authors">
+        <mdb-card>
+            <!--Card image-->
+            <mdb-card-img src="assets/images/person_placeholder.png" alt="Card image cap"></mdb-card-img>
+            <!--Card content-->
+            <mdb-card-body>
+          
+              <!--Title-->
+              <mdb-card-title>
+                <h4>{{author.firstName}} {{author.lastName}}</h4>
+              </mdb-card-title>
+          
+              <!--Text-->
+              <mdb-card-text> 
+                  {{author.university}}
+              </mdb-card-text>
+              <mdb-card-text> 
+                  {{author.role}}
+              </mdb-card-text>
+            </mdb-card-body>
+          </mdb-card>
+    </div>
+</div>
