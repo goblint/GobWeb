@@ -1,10 +1,10 @@
 import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
-  { 
-  link: 'https://link.springer.com/chapter/10.1007%2F978-3-030-72013-1_28', 
-  title: 'Goblint: Thread-Modular Abstract Interpretation Using Side-Effecting Constraints:(Competition Contribution)', 
-  conference: 'TACAS', 
+  {
+  link: 'https://link.springer.com/chapter/10.1007%2F978-3-030-72013-1_28',
+  title: 'Goblint: Thread-Modular Abstract Interpretation Using Side-Effecting Constraints:(Competition Contribution)',
+  conference: 'TACAS',
   year: 2021,
   description: 'Reports on Goblint\'s participation in SV-Comp.',
   citation: '\@article \{PMCID:PMC7984535\,\n\
@@ -19,10 +19,10 @@ export const PAPERS: Paper[] = [
     URL = \{https://europepmc.org/articles/PMC7984535\}\,\n\
   \}\n'
   },
-  { 
-  link: 'https://link.springer.com/chapter/10.1007/978-3-030-41103-9_5', 
-  title: 'Incremental Abstract Interpretation', 
-  conference: 'LNCS', 
+  {
+  link: 'https://link.springer.com/chapter/10.1007/978-3-030-41103-9_5',
+  title: 'Incremental Abstract Interpretation',
+  conference: 'LNCS',
   year: 2020,
   description: 'Shows how the top-down solver can be employed for the incremental analysis of program code that is undergoing changes.',
   citation: '\@Inbook\{Seidl2020\,\n\
@@ -44,10 +44,10 @@ export const PAPERS: Paper[] = [
     url="https://doi.org/10.1007/978-3-030-41103-9_5"\n\
     }\n'
   },
-  { 
-  link: 'https://dl.acm.org/doi/abs/10.1145/3236950.3236967', 
-  title: 'Three Improvements to the Top-Down Solver', 
-  conference: 'PPDP', 
+  {
+  link: 'https://dl.acm.org/doi/abs/10.1145/3236950.3236967',
+  title: 'Three Improvements to the Top-Down Solver',
+  conference: 'PPDP',
   year: 2018,
   description: 'Describes how the top-down solver can be tuned to deal with non-monotonic right-hand sides, store abstract values only where necessary, and to work with side-effecting constraint systems.',
   citation: '\@inproceedings\{10.1145\/3236950.3236967\,\n\
@@ -68,10 +68,30 @@ export const PAPERS: Paper[] = [
     series = \{PPDP \'18\}\n\
     \}\n'
   },
-  { 
-  link: 'http://dl.acm.org/authorize?N27656', 
-  title: 'Static race detection for device drivers: the Goblint approach', 
-  conference: 'ASE', 
+  {
+  link: 'https://link.springer.com/chapter/10.1007/978-3-319-68167-2_1',
+  title: 'Proving Absence of Starvation by Means of Abstract Interpretation and Model Checking',
+  conference: 'ATVA',
+  year: 2017,
+  description: 'Describes how to combine Abstract Interpretation and Model Checking to prove the absence of starvation.',
+  citation: '@InProceedings\{10.1007/978-3-319-68167-2_1\,\n\
+    author=\{Seidl\, Helmut\n\
+    and Vogler, Ralf\},\n\
+    editor=\{D\'Souza\, Deepak\n\
+    and Narayan Kumar\, K.\}\,\n\
+    title=\{Proving Absence of Starvation by Means of Abstract Interpretation and Model Checking\}\,\n\
+    booktitle=\{Automated Technology for Verification and Analysis\}\,\n\
+    year=\{2017\}\,\n\
+    publisher=\{Springer International Publishing\}\,\n\
+    address=\{Cham\}\,\n\
+    pages=\{3--22\}\,\n\
+    isbn=\{978-3-319-68167-2\}\n\
+    \}\n'
+  },
+  {
+  link: 'http://dl.acm.org/authorize?N27656',
+  title: 'Static race detection for device drivers: the Goblint approach',
+  conference: 'ASE',
   year: 2016,
   description: 'This is the definitive overview of Goblint as a static data race analyzer.',
   citation: '@inproceedings\{10.1145/2970276.2970337\,\n\
@@ -92,10 +112,10 @@ export const PAPERS: Paper[] = [
     series = \{ASE 2016\}\n\
     \}\n'
   },
-  { 
-  link: 'http://dx.doi.org/10.1007/978-3-662-53413-7_22', 
-  title: 'Enforcing Termination of Interprocedural Analysis', 
-  conference: 'SAS', 
+  {
+  link: 'http://dx.doi.org/10.1007/978-3-662-53413-7_22',
+  title: 'Enforcing Termination of Interprocedural Analysis',
+  conference: 'SAS',
   year: 2016,
   description: 'Describes how to make solvers always terminate for interprocedural analysis.',
   citation: '\@InProceedings\{10.1007\/978-3-662-53413-7_22\,\n\
@@ -113,10 +133,10 @@ export const PAPERS: Paper[] = [
     isbn=\"978-3-662-53413-7\"\n\
     }\n'
   },
-  { 
-  link: '/assets/papers/flags.pdf', 
-  title: 'Precise Analysis of Value-Dependent Synchronization in Priority Scheduled Programs', 
-  conference: 'VMCAI', 
+  {
+  link: '/assets/papers/flags.pdf',
+  title: 'Precise Analysis of Value-Dependent Synchronization in Priority Scheduled Programs',
+  conference: 'VMCAI',
   year: 2014,
   description: 'Describes how to deal with synchronization using integer variables checked by the programmer.',
   citation: '\@inproceedings\{inproceedings\,\n\
@@ -129,10 +149,10 @@ export const PAPERS: Paper[] = [
     doi = \{10.1007\/978-3-642-54013-4_2\}\n\
     \}\n'
   },
-  { 
-  link: 'http://dl.acm.org/authorize?N27657', 
-  title: 'How to combine widening and narrowing for non-monotonic systems of equations', 
-  conference: 'PLDI', 
+  {
+  link: 'http://dl.acm.org/authorize?N27657',
+  title: 'How to combine widening and narrowing for non-monotonic systems of equations',
+  conference: 'PLDI',
   year: 2013,
   description: 'We had long been searching for a way to introduce widening/narrowings into the demand-driven solvers used in Goblint. This paper shows how to do it.',
   citation: '\@article\{10.1145\/2499370.2462190\,\n\
@@ -173,10 +193,10 @@ export const PAPERS: Paper[] = [
     series = \{PLDI \'13\}\n\
     \}\n'
   },
-  { 
-  link: '/assets/papers/side.pdf', 
-  title: 'Side-effecting constraint systems: A Swiss army knife for program analysis', 
-  conference: 'APLAS', 
+  {
+  link: '/assets/papers/side.pdf',
+  title: 'Side-effecting constraint systems: A Swiss army knife for program analysis',
+  conference: 'APLAS',
   year: 2012,
   description: 'Generalizes the global invariant approach to arbitrary side-effecting constraints. This is the theoretical foundation of the Goblint analysis framework.',
   citation: '\@InProceedings\{10.1007/978-3-642-35182-2_12\,\n\
@@ -195,10 +215,10 @@ export const PAPERS: Paper[] = [
     isbn=\"978-3-642-35182-2\"\n\
     \}\n'
   },
-  { 
-  link: '/assets/papers/class.pdf', 
-  title: 'Class-modular, class-escape and points-to analysis for object-oriented languages', 
-  conference: 'NFM', 
+  {
+  link: '/assets/papers/class.pdf',
+  title: 'Class-modular, class-escape and points-to analysis for object-oriented languages',
+  conference: 'NFM',
   year: 2012,
   description: 'Describes a class-escape analysis for C++ implemented in Goblint using LLVM as frontend.',
   citation: '\@InProceedings\{10.1007/978-3-642-28891-3_11\,\n\
@@ -216,10 +236,10 @@ export const PAPERS: Paper[] = [
     isbn=\"978-3-642-28891-3\"\n\
     \}\n'
   },
-  { 
-  link: 'http://dl.acm.org/authorize?N27658', 
-  title: 'Static analysis of interrupt-driven programs synchronized via the priority ceiling protocol', 
-  conference: 'POPL', 
+  {
+  link: 'http://dl.acm.org/authorize?N27658',
+  title: 'Static analysis of interrupt-driven programs synchronized via the priority ceiling protocol',
+  conference: 'POPL',
   year: 2011,
   description: 'Presents the techniques the analyzer uses to analyze OSEK programs.',
   citation: '\@article\{10.1145/1925844.1926398\,\n\
@@ -260,10 +280,10 @@ export const PAPERS: Paper[] = [
     series = \{POPL \'11\}\n\
     \}\n'
   },
-  { 
-  link: '/assets/papers/coq.pdf', 
-  title: 'Verifying a Local Generic Solver in Coq', 
-  conference: 'SAS', 
+  {
+  link: '/assets/papers/coq.pdf',
+  title: 'Verifying a Local Generic Solver in Coq',
+  conference: 'SAS',
   year: 2010,
   description: 'A verified version of the local solver used in Goblint.',
   citation: '\@Inproceedings\{HofmannEtAl2010a\,\n\
@@ -275,10 +295,10 @@ export const PAPERS: Paper[] = [
     pages = \{340-355\}\n\
   \}\n'
   },
-  { 
-  link: '/assets/papers/regions.pdf', 
-  title: 'Region analysis for race detection', 
-  conference: 'SAS', 
+  {
+  link: '/assets/papers/regions.pdf',
+  title: 'Region analysis for race detection',
+  conference: 'SAS',
   year: 2009,
   description: 'This paper explains the region analysis method that we use to deal with medium-grained locking.',
   citation: '\@InProceedings\{10.1007/978-3-642-03237-0_13\,\n\
@@ -296,10 +316,10 @@ export const PAPERS: Paper[] = [
     isbn=\"978-3-642-03237-0\"\n\
     \}\n'
   },
-  { 
-  link: '/assets/papers/must-alias.pdf', 
-  title: 'A smooth combination of linear and Herbrand equalities for polynomial time must-alias analysis', 
-  conference: 'FM', 
+  {
+  link: '/assets/papers/must-alias.pdf',
+  title: 'A smooth combination of linear and Herbrand equalities for polynomial time must-alias analysis',
+  conference: 'FM',
   year: 2009,
   description: 'Presents the key ideas for dealing with per-element locking',
   citation: '\@inproceedings\{DBLP:conf/fm/SeidlVV09\,\n\
@@ -324,10 +344,10 @@ export const PAPERS: Paper[] = [
     bibsource = \{dblp computer science bibliography\, https://dblp.org\}\n\
   \}\n'
   },
-  { 
-  link: '/assets/papers/goblint.pdf', 
-  title: 'Goblint: path-sensitive data race analysis', 
-  conference: 'SPLST', 
+  {
+  link: '/assets/papers/goblint.pdf',
+  title: 'Goblint: path-sensitive data race analysis',
+  conference: 'SPLST',
   year: 2007,
   description: 'Overview of the race detection analysis and how it uses property-simulation to obtain a path-sensitive analysis.',
   citation: '\@article\{VojdaniVene09\,\n\
@@ -339,10 +359,10 @@ export const PAPERS: Paper[] = [
     year = \{2009\}\,\n\
   \}\n'
   },
-  { 
-  link: '/assets/papers/invariants.pdf', 
-  title: 'Global invariants for analysing multi-threaded applications', 
-  conference: 'NWPT', 
+  {
+  link: '/assets/papers/invariants.pdf',
+  title: 'Global invariants for analysing multi-threaded applications',
+  conference: 'NWPT',
   year: 2002,
   description: 'Describes the underlying nested-fixpoint style thread-modular analysis engine that enables us to analyze multi-threaded programs soundly.',
   citation: '\@article\{Seidl03\,\n\
