@@ -2,7 +2,7 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
-    link: 'https://link.springer.com/chapter/10.1007%2F978-3-030-72013-1_28',
+    link: 'https://link.springer.com/chapter/10.1007/978-3-030-88806-0_18',
     title: 'Improving Thread-Modular Abstract Interpretation',
     conference: 'SAS',
     year: 2021,
