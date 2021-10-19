@@ -2,6 +2,32 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
+    link: 'https://link.springer.com/chapter/10.1007%2F978-3-030-72013-1_28',
+    title: 'Improving Thread-Modular Abstract Interpretation',
+    conference: 'SAS',
+    year: 2021,
+    description: 'Describes various thread-modular non-relational value analyses that are implemented in Goblint as abstractions of a local trace semantics. ',
+    citation: '\@InProceedings\{10.1007/978-3-030-88806-0_18,\n\
+      author=\{Schwarz, Michael\n\
+      and Saan, Simmo\n\
+      and Seidl, Helmut\n\
+      and Apinis, Kalmer\n\
+      and Erhard, Julian\n\
+      and Vojdani, Vesal\},\n\
+      editor=\{Dr\{\\u{a\}\}goi, Cezara\n\
+      and Mukherjee, Suvam\n\
+      and Namjoshi, Kedar\},\n\
+      title=\{Improving Thread-Modular Abstract Interpretation\},\n\
+      booktitle=\{Static Analysis\},\n\
+      year=\{2021\},\n\
+      publisher=\{Springer International Publishing\},\n\
+      address=\{Cham\},\n\
+      pages=\{359--383\},\n\
+      abstract=\{We give thread-modular non-relational value analyses as abstractions of a local trace semantics. The semantics as well as the analyses are formulated by means of global invariants and side-effecting constraint systems. We show that a generalization of the analysis provided by the static analyzer Goblint as well as a natural improvement of Antoine Min\{\\\'e\}\'s approach can be obtained as instances of this general scheme. We show that these two analyses are incomparable w.r.t. precision and provide a refinement which improves on both precision-wise. We also report on a preliminary experimental comparison of the given analyses on a meaningful suite of benchmarks.\},\n\
+      isbn=\{978-3-030-88806-0\}\n\
+      \}'
+  },
+  {
   link: 'https://link.springer.com/chapter/10.1007%2F978-3-030-72013-1_28',
   title: 'Goblint: Thread-Modular Abstract Interpretation Using Side-Effecting Constraints:(Competition Contribution)',
   conference: 'TACAS',
