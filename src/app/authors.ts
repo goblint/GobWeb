@@ -2,12 +2,6 @@ import { Author } from './author';
 
 export const AUTHORS: Author[] = [
   {
-    firstName: "Helmut",
-    lastName: "Seidl",
-    role: "Contributor",
-    university: "Technical University of Munich" 
-  },
-  {
     firstName: "Kalmer",
     lastName: "Apinis",
     role: "Contributor",
@@ -26,22 +20,22 @@ export const AUTHORS: Author[] = [
     university: "University of Tartu" 
   },
   {
-    firstName: "Martin",
-    lastName: "Schwarz",
-    role: "Contributor",
-    university: "Technical University of Munich" 
-  },
-  {
     firstName: "Michael",
     lastName: "Schwarz",
     role: "Contributor",
     university: "Technical University of Munich" 
   },
   {
-    firstName: "Varmo",
-    lastName: "Vene",
+    firstName: "Helmut",
+    lastName: "Seidl",
     role: "Contributor",
-    university: "University of Tartu" 
+    university: "Technical University of Munich" 
+  },
+  {
+    firstName: "Sarah",
+    lastName: "Tilscher",
+    role: "Contributor",
+    university: "Technical University of Munich" 
   },
   {
     firstName: "Ralf",
@@ -54,12 +48,6 @@ export const AUTHORS: Author[] = [
     lastName: "Vojdani",
     role: "Contributor",
     university: "University of Tartu" 
-  },
-  {
-    firstName: "Sarah",
-    lastName: "Tilscher",
-    role: "Contributor",
-    university: "Technical University of Munich" 
   },
   {
     firstName: "Ivana",
