@@ -36,7 +36,7 @@
 </div>
 <div class="row d-flex justify-content-center">
     <p class="text-justify">The following screenshot illustrates the result of running the analyzer on a simple program with a static array of mutexes. </p>
-    <a href="images/screen.png" target="_self"><img src="assets/images/screen.png" alt="Screenshot" width="720" height="896" class="m-5"/></a>
+    <div class="m-5"><a href="images/screen.png" target="_self"><img src="assets/images/screen.png" alt="Screenshot" width="100%"/></a></div>
     <p class="text-justify">The safe incrementation function increases an element in the data array while acquiring the corresponding mutex; however,
         the main thread erroneously increments the third element while having locked the fourth lock.</p>
         
