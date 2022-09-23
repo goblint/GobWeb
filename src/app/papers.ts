@@ -2,6 +2,50 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
+    link: 'https://arxiv.org/abs/2209.10445',
+    title: 'Interactive Abstract Interpretation: Reanalyzing Whole Programs for Cheap',
+    conference: 'arXiv CoRR',
+    year: 2022,
+    description: 'Preprint of our work on efficient incremental analysis of large programs.\
+      Demonstrates a generic approach to incrementalize any analysis and shows how to put it at the finger-tips of the developers.',
+    citation: '\@misc\{https://doi.org/10.48550/arxiv.2209.10445\,\n\
+      doi = \{10.48550/ARXIV.2209.10445\}\,\n\
+      url = \{https://arxiv.org/abs/2209.10445\}\,\n\
+      author = \{Erhard, Julian and Saan, Simmo and Tilscher, Sarah and Schwarz, Michael and Holter, Karoliine and Vojdani, Vesal and Seidl, Helmut\}\,\n\
+      keywords = \{Programming Languages (cs.PL), FOS: Computer and information sciences, FOS: Computer and information sciences, D.2.4\}\,\n\
+      title = \{Interactive Abstract Interpretation: Reanalyzing Whole Programs for Cheap\}\,\n\
+      publisher = \{arXiv\}\,\n\
+      year = \{2022\}\,\n\
+      copyright = \{arXiv.org perpetual, non-exclusive license\}\,\n\
+      \}\n'
+  },
+  {
+    link: '',
+    title: 'The Top-Down Solver: An Exercise in A²I',
+    conference: 'to appear in Festschrift to Patrick Cousot',
+    year: 2022,
+    description: 'Demonstrates how a top-down solver can be constructed starting from a simple evaluator of non-recursive functions by abstract interpretation to the abstract interpreter (A²I, as proposed by Cousot).',
+    citation: ''
+  },
+  {
+    link: 'https://www.cambridge.org/core/journals/mathematical-structures-in-computer-science/article/three-improvements-to-the-topdown-solver/CE9A5F2A3FD62ECF9E6683598322CD52',
+    title: 'Three Improvements to the Top-Down Solver',
+    conference: 'MSCS',
+    year: 2022,
+    description: 'Gives a comprehensive account of the local solver TD3 used in Goblint and why it is especially suited to the context-sensitive analysis of multi-threaded programs. Extended Version of our PPDP \'18 paper.',
+    citation: '\@article\{seidl_vogler_2021\,\n\
+      title=\{Three improvements to the top-down solver\}\,\n\
+      volume=\{31\}\,\n\
+      DOI=\{10.1017/S0960129521000499\},\n\
+      number=\{9\}\,\n\
+      journal=\{Mathematical Structures in Computer Science\}\,\n\
+      publisher=\{Cambridge University Press\}\,\n\
+      author=\{Seidl, Helmut and Vogler, Ralf\}\,\n\
+      year=\{2021\}\,\n\
+      pages=\{1090–1134\}\,\n\
+      \}\n'
+  },
+  {
     link: 'https://link.springer.com/chapter/10.1007/978-3-030-88806-0_18',
     title: 'Improving Thread-Modular Abstract Interpretation',
     conference: 'SAS',
