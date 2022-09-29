@@ -50,7 +50,7 @@
 </div>
 <div class="row d-flex justify-content-center">
     <div class="col-md-3 col-sm-6 mt-5"><h4>Race detection</h4><p class=""> Goblint started its life as a framework for race detection, and still excells here.
-        Goblint checks that all accesses to shared memory are protected by a common mutex, also taking into account which threads can execute in parallel, and which cannot.</p></div>
+        Goblint checks that conflicting accesses to shared memory cannot happen simultaneously, taking into account the set of held mutexes as well as which threads can execute in parallel, and which cannot.</p></div>
     <div class="col-md-3 col-sm-6 mt-5"><h4>Assertions &amp; Dead code</h4><p class=""> Goblint is capable of checking whether some assertion is guaranteed to hold at a given program point,
         or whether a certain program point is unreachable. This can be used to encode almost any safety property of interest.
     </p></div>
