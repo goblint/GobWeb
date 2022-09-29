@@ -4,15 +4,15 @@
 <div class="row d-flex justify-content-center mb-5">
     <div class="col"><p>
         Developing software that is free of bugs is a complex and challenging task, and even more so in a multi-threaded setting.
-        Goblint supports developers in this endeavor, by providing insights into the code and <b>flagging potential bugs</b>.
-        This flagging of bugs goes way beyond what inters typically can provide: Instead Goblint carefully considers the semantics
+        Goblint supports developers in this endeavor, by providing insights into the code and <b>warning about potential programming errors</b>.
+        This detection of possible programming errors goes way beyond what linters typically can provide: Instead, Goblint carefully considers the semantics
         of the entire program to flag all the bugs that could occur.
     </p><p>
         Goblint builds on <b>over a decade's worth of development and research</b> in field of Static Analysis by Abstract Interpretation, leveraging the expertise of the contributing
         research groups at the University of Tartu and at Technical University of Munich on <b>Abstract Interpretation, the semantics of the C programming language, Compiler Engineering,
         and Efficient Fixpoint Computation</b> to create an analyzer targeting real-world applications.
     </p>
-    <p> It also serves as the proving ground of our research ideas, so is constantly being enhanced with new and exciting ideas.</p>
+    <p> It also serves as the proving ground of our research ideas, so it is constantly being enhanced with new and exciting ideas.</p>
     <p>
         After over a decade of engineering, Goblint is a <b>robust framework</b> that can handle real-world applications and not just toy examples.
     </p>
@@ -30,7 +30,7 @@
     <div class="col-md-3 col-sm-6 mt-5"><h4>Path-sensitivity</h4><p class=""> Goblint is path-sensitive, so it deals with conditional locking schemes as well as possibly failing,
         interruptible and probing locking primitives. Mutexes may be handled both path-sensitively and symbolically. This is a <b>key ingredient</b> in reducing the number of false positives.</p></div>
     <div class="col-md-3 col-sm-6 mt-5"><h4>Thread-modularity</h4><p class=""> Goblint performs <b>thread-modular</b> analysis of C programs.
-        It computes a sound upper approximation of all possible thread interleavings using global invariants for shared data, <b>while avoiding the combinatorial explosion</b> of considering all interleavings.</p></div>
+        It computes a sound upper approximation of all possible thread interleavings using global invariants for shared data, which <b>avoids the combinatorial explosion</b> of considering all interleavings.</p></div>
     <div class="col-md-3 col-sm-6 mt-5"><h4>Incrementality</h4><p class=""> Instead of starting analysis from-scratch after a modification, Goblint is able to <b>reuse its results</b> for a previous version of the program and update
         them to account for the effect of changes in a fraction of the time a from-scratch analysis takes.
     </p></div>
@@ -50,7 +50,7 @@
 </div>
 <div class="row d-flex justify-content-center">
     <div class="col-md-3 col-sm-6 mt-5"><h4>Race detection</h4><p class=""> Goblint started its life as a framework for race detection, and still excells here.
-        Goblint checks that all accesses to shared memory are protected by a common mutex, also taking into account which threads can execute in parallel, and which can't.</p></div>
+        Goblint checks that all accesses to shared memory are protected by a common mutex, also taking into account which threads can execute in parallel, and which cannot.</p></div>
     <div class="col-md-3 col-sm-6 mt-5"><h4>Reach safety</h4><p class=""> Goblint is capable of checking whether some assert is guaranteed to hold at a given program point,
         or whether a certain program is unreachable. This can be used to encode almost any safety property of interest.
     </p></div>
@@ -58,7 +58,7 @@
         are notorious causes of Undefined Behavior and bugs in real-world programs.
     </p></div>
     <div class="col-md-3 col-sm-6 mt-5"><h4>And many more...</h4><p class=""> Goblint comes with a wide variety of further analysis, and it is easy to extend for analysis engineers. It suffices
-        to define the domain and the right-hand sides and that's it! Here is a <a href="https://goblint.readthedocs.io/en/latest/developer-guide/firstanalysis/" target="_blank">tutorial</a> for extending Goblint.
+        to define the domain and the transfer functions, and that's it! Here is a <a href="https://goblint.readthedocs.io/en/latest/developer-guide/firstanalysis/" target="_blank">tutorial</a> for extending Goblint.
     </p></div>
     <!-- TODO: fill the feature descriptions
     <div class="col-md-3 col-sm-6 mt-5"><h4>Starvation analysis</h4><p class=""> ...</p></div>
@@ -84,17 +84,11 @@
         and an easy to use IDE integration. If your program is open source, feel free to contribute it to our benchmark suite. We're happy to help if there are issues. Give it a try!
     </p></div>
     <div class="col-md-4 col-sm-6 mt-5"><h4>... students.</h4><p class=""> We are continuously looking for motivated students who are excited to learn about Static Analysis by Abstract Interpretation and want
-        to contribute to Goblint. This can be in a course, as a HiWi, or as a Bachelor's or Master's thesis, both at UTartu and at TUM. Just reach out to any of us if you are interested!
+        to contribute to Goblint. This can be in a course, as part of a student job, or as a Bachelor's or Master's thesis, both at UTartu and at TUM. Just reach out to any of us if you are interested!
     </p></div>
     <div class="col-md-4 col-sm-6 mt-5"><h4>... researchers.</h4><p class=""> Goblint is both a mature framework and easy to extend. As such, it is well-suited to prototype your own ideas without having to implement
-        all the standard things from scratch. Also, building on Goblint makes it easy to test your ideas on real-world applications instead of being limited by engineering issues!
+        all the scaffolding (implementing C-frontends, fixed-point-algorithms, default analyses, and many more) from scratch. Also, building on Goblint makes it easy to test your ideas on real-world applications instead of being limited by engineering issues!
     </p></div>
-    <!-- TODO: fill the feature descriptions
-    <div class="col-md-3 col-sm-6 mt-5"><h4>Starvation analysis</h4><p class=""> ...</p></div>
-    <div class="col-md-3 col-sm-6 mt-5"><h4>Incremental analysis of Git repositories</h4><p class="">Incremental analysis of Git repositories</p></div>
-    <div class="col-md-3 col-sm-6 mt-5"><h4>Fixpoint algorithms</h4><p class=""> Generic fixpoint algorithms with widening and narrowing.</p></div>
-    <div class="col-md-3 col-sm-6 mt-5"><h4>Global invariant</h4><p class=""> Global invariant approach and side-effecting.</p></div>
-    <div class="col-md-3 col-sm-6 mt-5"><h4>HTML front-end</h4><p class=""> Visualisation of results.</p></div> -->
 
 </div>
 
@@ -109,7 +103,7 @@
         Analyses, which are defined by their abstract domains and transfer functions, can be activated via runtime configuration options.
         A flexible query system allows for communication between analyses.
         Together, the combined analyses and the control-flow graphs of the functions in the program provide the side-effecting constraint system,
-        which is solved by some local generic solver.
+        which is solved by a local generic solver.
         Post-processing the solution yields results for the analysis.
     </p></div>
 </div>
