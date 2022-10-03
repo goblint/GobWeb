@@ -19,11 +19,11 @@
 </div>
 <div class="row d-flex justify-content-center">
     <div class="col-md-3 col-sm-6 mt-5"><h4>Sound by construction</h4><p class=""> Goblint is bases on a strong theoretical foundation, namely the concept of <b>Abstract Interpretation</b> as proposed by Patrick and Radhia Cousot.
-        <b>Thus, when Goblint claims a program is free of (a given class of) bugs, the program actually is!</b>
+        Thus, when Goblint claims a program is free of (a given class of) bugs, the program actually is!
     </p></div>
-    <div class="col-md-3 col-sm-6 mt-5"><h4>Path-sensitivity</h4><p class=""> Goblint is path-sensitive, so it deals with conditional locking schemes as well as possibly failing,
-        interruptible and probing locking primitives. Mutexes may be handled both path-sensitively and symbolically. This is a <b>key ingredient</b> in reducing the number of false positives.</p></div>
-    <div class="col-md-3 col-sm-6 mt-5"><h4>Thread-modularity</h4><p class=""> Goblint performs <b>thread-modular</b> analysis of C programs.
+    <div class="col-md-3 col-sm-6 mt-5"><h4>Path-sensitivity</h4><p class=""> Goblint is path-sensitive, so it deals with <b>conditional locking</b> schemes as well as possibly failing,
+        interruptible and probing locking primitives. Mutexes may be handled both path-sensitively and symbolically. This is a key ingredient in reducing the number of false positives.</p></div>
+    <div class="col-md-3 col-sm-6 mt-5"><h4>Thread-modularity</h4><p class=""> Goblint performs thread-modular analysis of C programs.
         It computes a sound upper approximation of all possible thread interleavings using global invariants for shared data, which <b>avoids the combinatorial explosion</b> of considering all interleavings.</p></div>
     <div class="col-md-3 col-sm-6 mt-5"><h4>Incrementality</h4><p class=""> Instead of starting analysis from-scratch after a modification, Goblint is able to <b>reuse its results</b> for a previous version of the program and update
         them to account for the effect of changes in a fraction of the time a from-scratch analysis takes.
