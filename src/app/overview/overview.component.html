@@ -1,34 +1,105 @@
 <div class="row d-flex justify-content-center">
-    <h2 class="m-5">Architecture</h2><br>
+    <h2 class="m-5">Why Goblint?</h2><br>
 </div>
 <div class="row d-flex justify-content-center mb-5">
-    <div class="col"><p> 
-        Goblint is implemented in OCaml and uses an updated fork of CIL as its parser frontend for the C language.
-        The architecture of Goblint is designed to be modular. 
-        Analyses, which are defined by their abstract domains and transfer functions, can be activated via runtime configuration options. 
-        A flexible query system allows for communication between analyses. 
-        Together, the combined analyses and the control-flow graphs of the functions in the program provide the side-effecting constraint system, 
-        which is solved by some local generic solver. 
-        Post-processing the solution yields results for the analysis.
+    <div class="col"><p>
+        Developing software that is free of bugs is a complex and challenging task, and even more so in a multi-threaded setting.
+        Goblint supports developers in this endeavor, by providing insights into the code and <b>warning about potential programming errors</b>.
+        This detection of possible programming errors goes way beyond what linters typically can provide: Instead, Goblint carefully considers the semantics
+        of the entire program to flag <b>all</b> the bugs that could occur.
+    </p><p>
+        Goblint is not only a research platform advancing the state-of-the-art in Sound Static Analysis, but after over a decade of engineering, it is <b>robust framework</b> that can analyze real-world applications.
+    </p>
+    </div>
+</div>
+
+
+<div class="row d-flex justify-content-center">
+    <h2>Highlights</h2><br>
+</div>
+<div class="row d-flex justify-content-center">
+    <div class="col-md-3 col-sm-6 mt-5"><h4>Sound by construction</h4><p class=""> Goblint is bases on a strong theoretical foundation, namely the concept of <b>Abstract Interpretation</b> as proposed by Patrick and Radhia Cousot.
+        Thus, when Goblint claims a program is free of (a given class of) bugs, the program actually is!
     </p></div>
-</div>
-<div class="row d-flex justify-content-center">
-    <h2>Overview of Goblint Features</h2><br>
-</div>
-<div class="row d-flex justify-content-center">
-    <div class="col-md-3 col-sm-6 mt-5"><h4>Race detection</h4><p class=""> The main application of this framework is for race detection. 
-        Goblint checks  that all accesses to shared memory are protected by a common mutex.</p></div>
-    <div class="col-md-3 col-sm-6 mt-5"><h4>Path-sensitivity</h4><p class=""> Goblint is path-sensitive, so it deals with conditional locking schemes as well as possibly failing, 
-        interruptible and probing locking primitives. Mutexes may be handled both pathsensitively and symbolically.</p></div>
-    <div class="col-md-3 col-sm-6 mt-5"><h4>Thread-modularity</h4><p class=""> Goblint performs thread-modular analysis of C programs. 
-        It computes a sound upper approximation of all possible thread interleavings using global invariants for shared data.</p></div>
-    <!-- TODO: fill the feature descriptions 
+    <div class="col-md-3 col-sm-6 mt-5"><h4>Path-sensitivity</h4><p class=""> Goblint is path-sensitive, so it deals with <b>conditional locking</b> schemes as well as possibly failing,
+        interruptible and probing locking primitives. Mutexes may be handled both path-sensitively and symbolically. This is a key ingredient in reducing the number of false positives.</p></div>
+    <div class="col-md-3 col-sm-6 mt-5"><h4>Thread-modularity</h4><p class=""> Goblint performs thread-modular analysis of C programs.
+        It computes a sound upper approximation of all possible thread interleavings using global invariants for shared data, which <b>avoids the combinatorial explosion</b> of considering all interleavings.</p></div>
+    <div class="col-md-3 col-sm-6 mt-5"><h4>Incrementality</h4><p class=""> Instead of starting analysis from-scratch after a modification, Goblint is able to <b>reuse its results</b> for a previous version of the program and update
+        them to account for the effect of changes in a fraction of the time a from-scratch analysis takes.
+    </p></div>
+    <!-- TODO: fill the feature descriptions
     <div class="col-md-3 col-sm-6 mt-5"><h4>Starvation analysis</h4><p class=""> ...</p></div>
     <div class="col-md-3 col-sm-6 mt-5"><h4>Incremental analysis of Git repositories</h4><p class="">Incremental analysis of Git repositories</p></div>
     <div class="col-md-3 col-sm-6 mt-5"><h4>Fixpoint algorithms</h4><p class=""> Generic fixpoint algorithms with widening and narrowing.</p></div>
     <div class="col-md-3 col-sm-6 mt-5"><h4>Global invariant</h4><p class=""> Global invariant approach and side-effecting.</p></div>
     <div class="col-md-3 col-sm-6 mt-5"><h4>HTML front-end</h4><p class=""> Visualisation of results.</p></div> -->
-    
+
+</div>
+<br />
+<br />
+<br />
+<div class="row d-flex justify-content-center">
+    <h2>Supported Properties</h2><br>
+</div>
+<div class="row d-flex justify-content-center">
+    <div class="col-md-3 col-sm-6 mt-5"><h4>Race detection</h4><p class=""> Goblint started its life as a framework for race detection, and still excells here.
+        Goblint checks that conflicting accesses to shared memory cannot happen simultaneously, taking into account the set of held mutexes as well as which threads can execute in parallel, and which cannot.</p></div>
+    <div class="col-md-3 col-sm-6 mt-5"><h4>Assertions &amp; Dead code</h4><p class=""> Goblint is capable of checking whether some assertion is guaranteed to hold at a given program point,
+        or whether a certain program point is unreachable. This can be used to encode almost any safety property of interest.
+    </p></div>
+    <div class="col-md-3 col-sm-6 mt-5"><h4>Integer Overflows</h4><p class=""> Goblint can verify that programs are free of overflows of (signed) overflows of integers, which
+        are notorious causes of Undefined Behavior and bugs in real-world programs.
+    </p></div>
+    <div class="col-md-3 col-sm-6 mt-5"><h4>And many more...</h4><p class=""> Goblint comes with a wide variety of further analysis, and it is easy to extend for analysis engineers. It suffices
+        to define the domain and the transfer functions &ndash; and that's it! Here is a <a href="https://goblint.readthedocs.io/en/latest/developer-guide/firstanalysis/" target="_blank">tutorial</a> for extending Goblint.
+    </p></div>
+    <!-- TODO: fill the feature descriptions
+    <div class="col-md-3 col-sm-6 mt-5"><h4>Starvation analysis</h4><p class=""> ...</p></div>
+    <div class="col-md-3 col-sm-6 mt-5"><h4>Incremental analysis of Git repositories</h4><p class="">Incremental analysis of Git repositories</p></div>
+    <div class="col-md-3 col-sm-6 mt-5"><h4>Fixpoint algorithms</h4><p class=""> Generic fixpoint algorithms with widening and narrowing.</p></div>
+    <div class="col-md-3 col-sm-6 mt-5"><h4>Global invariant</h4><p class=""> Global invariant approach and side-effecting.</p></div>
+    <div class="col-md-3 col-sm-6 mt-5"><h4>HTML front-end</h4><p class=""> Visualisation of results.</p></div> -->
+
+</div>
+
+<br />
+<br />
+<br />
+
+
+
+
+<div class="row d-flex justify-content-center">
+    <h2>Goblint for...</h2><br>
+</div>
+<div class="row d-flex justify-content-center">
+    <div class="col-md-4 col-sm-6 mt-5"><h4>... software developers.</h4><p class=""> Goblint is free to try out and comes with both a command line interface, the possibility to integrate it into your CI workflow,
+        and an easy to use IDE integration. If your program is open source, feel free to contribute it to our benchmark suite. We're happy to help if there are issues. Give it a try!
+    </p></div>
+    <div class="col-md-4 col-sm-6 mt-5"><h4>... students.</h4><p class=""> We are continuously looking for motivated students who are excited to learn about Static Analysis by Abstract Interpretation and want
+        to contribute to Goblint. This can be in a course, as part of a student job, or as a Bachelor's or Master's thesis, both at UTartu and at TUM. Just reach out to any of us if you are interested!
+    </p></div>
+    <div class="col-md-4 col-sm-6 mt-5"><h4>... researchers.</h4><p class=""> Goblint is both a mature framework and easy to extend. As such, it is well-suited to prototype your own ideas without having to implement
+        all the scaffolding (implementing C-frontends, fixed-point-algorithms, default analyses, and many more) from scratch. Also, building on Goblint makes it easy to test your ideas on real-world applications instead of being limited by engineering issues!
+    </p></div>
+
+</div>
+
+
+<div class="row d-flex justify-content-center">
+    <h2 class="m-5">Architecture</h2><br>
+</div>
+<div class="row d-flex justify-content-center mb-5">
+    <div class="col"><p>
+        Goblint is implemented in OCaml and uses a fork of CIL that has been extended with support for C99 and (most of C11) as its parser frontend for the C language.
+        The architecture of Goblint is designed to be modular.
+        Analyses, which are defined by their abstract domains and transfer functions, can be activated via runtime configuration options.
+        A flexible query system allows for communication between analyses.
+        Together, the combined analyses and the control-flow graphs of the functions in the program provide the side-effecting constraint system,
+        which is solved by a local generic solver.
+        Post-processing the solution yields results for the analysis.
+    </p></div>
 </div>
 
 <div class="row d-flex justify-content-center">
@@ -39,8 +110,8 @@
     <div class="m-5"><a href="images/screen.png" target="_self"><img src="assets/images/screen.png" alt="Screenshot" width="100%"/></a></div>
     <p class="text-justify">The safe incrementation function increases an element in the data array while acquiring the corresponding mutex; however,
         the main thread erroneously increments the third element while having locked the fourth lock.</p>
-        
-    <p class="text-justify">As the example shows, Goblint not only tracks the flow of locks in and out of functions, 
-        but carefully considers the values and equalities between indexing variables to infer correlations. 
-    </p> 
+
+    <p class="text-justify">As the example shows, Goblint not only tracks the flow of locks in and out of functions,
+        but carefully considers the values and equalities between indexing variables to infer correlations.
+    </p>
 </div>
