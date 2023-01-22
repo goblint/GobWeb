@@ -2,6 +2,23 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
+    link: 'https://arxiv.org/abs/2301.06439',
+    title: 'Clustered Relational Thread-Modular Abstract Interpretation with Local Trace',
+    conference: 'To appear in ESOP',
+    year: 2023,
+    description: 'We construct novel thread-modular analyses tracking relational information for clusters of global variables and provide a framework to increase the precision of analyses by splitting control locations based on abstractions of local traces. As one instance, we obtain an analysis of dynamic thread creation and joining. Interestingly, tracking less relational information for globals may result in higher precision.',
+    citation: '\@misc\{https://doi.org/10.48550/arxiv.2301.06439\,\n\
+      doi = \{10.48550/ARXIV.2301.06439\}\,\n\
+      url = \{https://arxiv.org/abs/2301.06439\}\,\n\
+      author = \{Schwarz, Michael and Saan, Simmo and Seidl, Helmut and Erhard, Julian and Vojdani, Vesal\}\,\n\
+      keywords = \{Programming Languages (cs.PL), FOS: Computer and information sciences, FOS: Computer and information sciences, D.2.4\}\,\n\
+      title = \{Clustered Relational Thread-Modular Abstract Interpretation with Local Trace\}\,\n\
+      publisher = \{arXiv\}\,\n\
+      year = \{2023\}\,\n\
+      copyright = \{arXiv.org perpetual, non-exclusive license\}\,\n\
+      \}\n'
+  },
+  {
     link: 'https://arxiv.org/abs/2209.10445',
     title: 'Interactive Abstract Interpretation: Reanalyzing Whole Programs for Cheap',
     conference: 'arXiv CoRR',
