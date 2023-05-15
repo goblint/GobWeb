@@ -2,21 +2,77 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
-    link: 'https://arxiv.org/abs/2301.06439',
+    link: '',
+    title: 'When Long Jumps Fall Short: Control-Flow Tracking and Misuse Detection for Non-local Jumps in C',
+    conference: 'to appear in SOAP',
+    year: 2023,
+    description: 'We design novel analyses to both track control-flow of programs using setjmp/longjmp and to detect misuses of these non-local jumps leading to Undefined Behavior.',
+    citation: ''
+  },
+  {
+    link: 'https://link.springer.com/chapter/10.1007/978-3-031-30044-8_2',
     title: 'Clustered Relational Thread-Modular Abstract Interpretation with Local Trace',
-    conference: 'To appear in ESOP',
+    conference: 'ESOP',
     year: 2023,
     description: 'We construct novel thread-modular analyses tracking relational information for clusters of global variables and provide a framework to increase the precision of analyses by splitting control locations based on abstractions of local traces. As one instance, we obtain an analysis of dynamic thread creation and joining. Interestingly, tracking less relational information for globals may result in higher precision.',
-    citation: '\@misc\{https://doi.org/10.48550/arxiv.2301.06439\,\n\
-      doi = \{10.48550/ARXIV.2301.06439\}\,\n\
-      url = \{https://arxiv.org/abs/2301.06439\}\,\n\
-      author = \{Schwarz, Michael and Saan, Simmo and Seidl, Helmut and Erhard, Julian and Vojdani, Vesal\}\,\n\
-      keywords = \{Programming Languages (cs.PL), FOS: Computer and information sciences, FOS: Computer and information sciences, D.2.4\}\,\n\
-      title = \{Clustered Relational Thread-Modular Abstract Interpretation with Local Trace\}\,\n\
-      publisher = \{arXiv\}\,\n\
-      year = \{2023\}\,\n\
-      copyright = \{arXiv.org perpetual, non-exclusive license\}\,\n\
-      \}\n'
+    citation: '\@inproceedings\{DBLP:conf/esop/SchwarzSSEV23\,\n\
+      author       = \{Michael Schwarz and\n\
+                      Simmo Saan and\n\
+                      Helmut Seidl and\n\
+                      Julian Erhard and\n\
+                      Vesal Vojdani\}\,\n\
+      editor       = \{Thomas Wies\}\,\n\
+      title        = \{Clustered Relational Thread-Modular Abstract Interpretation with Local\n\
+                      Traces\}\,\n\
+      booktitle    = \{Programming Languages and Systems - 32nd European Symposium on Programming\,\n\
+                      \{ESOP\} 2023, Held as Part of the European Joint Conferences on Theory\n\
+                      and Practice of Software\, \{ETAPS\} 2023\, Paris\, France\, April 22-27\,\n\
+                      2023\, Proceedings\}\,\n\
+      series       = \{Lecture Notes in Computer Science\}\,\n\
+      volume       = \{13990\}\,\n\
+      pages        = \{28--58\}\,\n\
+      publisher    = \{Springer\}\,\n\
+      year         = \{2023\}\,\n\
+      url          = \{https://doi.org/10.1007/978-3-031-30044-8\_2}\,\n\
+      doi          = \{10.1007/978-3-031-30044-8\_2\}\,\n\
+      timestamp    = \{Sat\, 13 May 2023 01:07:18 +0200\}\,\n\
+      biburl       = \{https://dblp.org/rec/conf/esop/SchwarzSSEV23.bib\}\,\n\
+      bibsource    = \{dblp computer science bibliography\, https://dblp.org\}\n\
+    \}\n'
+  },
+  {
+    link: 'https://link.springer.com/chapter/10.1007/978-3-031-30820-8_34',
+    title: 'Goblint: Autotuning Thread-Modular Abstract Interpretation - (Competition Contribution)',
+    conference: 'TACAS',
+    year: 2023,
+    description: 'Reports on Goblint\'s participation in SV-Comp and the new autotuner feature.',
+    citation: '\@inproceedings\{DBLP:conf/tacas/SaanSEPSTV23\,\n\
+    author       = \{Simmo Saan and\n\
+                    Michael Schwarz and\n\
+                    Julian Erhard and\n\
+                    Manuel Pietsch and\n\
+                    Helmut Seidl and\n\
+                    Sarah Tilscher and\n\
+                    Vesal Vojdani\}\,\n\
+    editor       = \{Sriram Sankaranarayanan and\n\
+                    Natasha Sharygina\}\,\n\
+    title        = \{Goblint: Autotuning Thread-Modular Abstract Interpretation - (Competition\n\
+                    Contribution)\}\,\n\
+    booktitle    = \{Tools and Algorithms for the Construction and Analysis of Systems\n\
+                    - 29th International Conference\, \{TACAS\} 2023\, Held as Part of the\n\
+                    European Joint Conferences on Theory and Practice of Software\, \{ETAPS\}\n\
+                    2022\, Paris\, France\, April 22-27\, 2023\, Proceedings\, Part \{II\}\}\,\n\
+    series       = \{Lecture Notes in Computer Science\}\,\n\
+    volume       = \{13994\}\,\n\
+    pages        = \{547--552},\n\
+    publisher    = \{Springer\}\,\n\
+    year         = \{2023\}\,\n\
+    url          = \{https://doi.org/10.1007/978-3-031-30820-8\_34\}\,\n\
+    doi          = \{10.1007/978-3-031-30820-8\_34\}\,\n\
+    timestamp    = \{Sat\, 13 May 2023 01:07:18 +0200\}\,\n\
+    biburl       = \{https://dblp.org/rec/conf/tacas/SaanSEPSTV23.bib\}\,\n\
+    bibsource    = \{dblp computer science bibliography\, https://dblp.org\}\n\
+  \}\n'
   },
   {
     link: 'https://arxiv.org/abs/2209.10445',
