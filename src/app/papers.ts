@@ -3,11 +3,44 @@ import { Paper } from './paper';
 export const PAPERS: Paper[] = [
   {
     link: '',
+    title: 'Octagons Revisited: Elegant Proofs and Simplified Algorithms',
+    conference: 'to appear in SAS',
+    year: 2023,
+    description: 'Here, we provide simplified cubic time\
+    algorithms for computing the closure of Octagon abstract relations both\
+    over the rationals and the integers which avoid introducing auxiliary\
+    variables. They are based on a more general formulation by means of\
+    2-projective domains which allows for an elegant short correctness proof.\
+    The notion of 2-projectivity also lends itself to efficient algorithms for\
+    incremental normalization. For the Octagon domain, we also provide\
+    an improved construction for linear programming based best abstract\
+    transformers for affine assignments.',
+    citation: ''
+  },
+  {
+    link: 'https://dl.acm.org/doi/abs/10.1145/3589250.3596140',
     title: 'When Long Jumps Fall Short: Control-Flow Tracking and Misuse Detection for Non-local Jumps in C',
-    conference: 'to appear in SOAP',
+    conference: 'SOAP@PLDI',
     year: 2023,
     description: 'We design novel analyses to both track control-flow of programs using setjmp/longjmp and to detect misuses of these non-local jumps leading to Undefined Behavior.',
-    citation: ''
+    citation: '\@inproceedings\{DBLP:conf/pldi/0007EVSS23\,\n\
+    author       = \{Michael Schwarz and\n\
+                    Julian Erhard and\n\
+                    Vesal Vojdani and\n\
+                    Simmo Saan and\n\
+                    Helmut Seidl\}\,\n\
+    editor       = \{Pietro Ferrara and\n\
+                    Liana Hadarean\},\n\
+    title        = \{When Long Jumps Fall Short: Control-Flow Tracking and Misuse Detection for Non-local Jumps in \{C\}\},\n\
+    booktitle    = \{Proceedings of the 12th \{ACM\} \{SIGPLAN\} International Workshop on\n\
+                    the State Of the Art in Program Analysis\, \{SOAP\} 2023\, Orlando\, FL\,\n\
+                    USA\, 17 June 2023\}\,\n\
+    pages        = \{20--26\}\,\n\
+    publisher    = \{\{ACM\}\}\,\n\
+    year         = \{2023\}\,\n\
+    url          = \{https://doi.org/10.1145/3589250.3596140\}\,\n\
+    doi          = \{10.1145/3589250.3596140\}\,\n\
+  \}\n'
   },
   {
     link: 'https://link.springer.com/chapter/10.1007/978-3-031-30044-8_2',
@@ -93,12 +126,30 @@ export const PAPERS: Paper[] = [
       \}\n'
   },
   {
-    link: '',
+    link: 'https://link.springer.com/chapter/10.1007/978-981-19-9601-6_9',
     title: 'The Top-Down Solver: An Exercise in A²I',
-    conference: 'to appear in Festschrift to Patrick Cousot',
+    conference: 'CSV',
     year: 2022,
     description: 'Demonstrates how a top-down solver can be constructed starting from a simple evaluator of non-recursive functions by abstract interpretation to the abstract interpreter (A²I, as proposed by Cousot).',
-    citation: ''
+    citation: '@Inbook\{Tilscher2023\,\
+      author="Tilscher\, Sarah\
+      and Stade\, Yannick\
+      and Schwarz\, Michael\
+      and Vogler\, Ralf\
+      and Seidl\, Helmut"\,\
+      editor="Arceri\, Vincenzo\
+      and Cortesi\, Agostino\
+      and Ferrara\, Pietro\
+      and Olliaro\, Martina"\,\
+      title="The Top-Down Solver---An Exercise in A^2I"\,\
+      bookTitle="Challenges of Software Verification"\,\
+      year="2023"\,\
+      publisher="Springer Nature Singapore"\,\
+      address="Singapore"\,\
+      pages="157--179"\,\
+      isbn="978-981-19-9601-6"\,\
+      doi="10.1007/978-981-19-9601-6_9"\,\
+      \}'
   },
   {
     link: 'https://www.cambridge.org/core/journals/mathematical-structures-in-computer-science/article/three-improvements-to-the-topdown-solver/CE9A5F2A3FD62ECF9E6683598322CD52',
