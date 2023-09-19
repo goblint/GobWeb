@@ -44,7 +44,7 @@ export const PAPERS: Paper[] = [
   },
   {
     link: 'https://link.springer.com/chapter/10.1007/978-3-031-30044-8_2',
-    title: 'Clustered Relational Thread-Modular Abstract Interpretation with Local Trace',
+    title: 'Clustered Relational Thread-Modular Abstract Interpretation with Local Traces',
     conference: 'ESOP',
     year: 2023,
     description: 'We construct novel thread-modular analyses tracking relational information for clusters of global variables and provide a framework to increase the precision of analyses by splitting control locations based on abstractions of local traces. As one instance, we obtain an analysis of dynamic thread creation and joining. Interestingly, tracking less relational information for globals may result in higher precision.',
