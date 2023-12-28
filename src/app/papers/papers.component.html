@@ -29,6 +29,11 @@
         <td>
           <em>{{ paper.conference }}</em>
         </td>
+        <td>
+          <ng-container *ngFor="let author of paper.authors; let last = last">
+            <nobr>{{ author }}</nobr><span *ngIf="!last">, </span>
+          </ng-container>
+        </td>
         <td>{{ paper.year }}</td>
         <td>
           <button
