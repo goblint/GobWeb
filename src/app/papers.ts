@@ -2,9 +2,20 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
-    link: '',
+    link: 'https://arxiv.org/abs/2310.16572',
+    title: 'Correctness Witness Validation by Abstract Interpretation',
+    conference: 'to appear at VMCAI',
+    year: 2024,
+    citation: '',
+    description: 'Witnesses record automated program analysis results and make them exchangeable. To validate correctness witnesses through abstract interpretation, we introduce a novel abstract operation unassume.\
+    This operator incorporates witness invariants into the abstract program state. Given suitable invariants, the unassume operation can accelerate fixpoint convergence and yield more precise results.\
+    We demonstrate the feasibility of this approach by augmenting an abstract interpreter with unassume operators and evaluating the impact of incorporating witnesses on performance and precision.\
+    '
+  },
+  {
+    link: 'https://rdcu.be/dpwHX', // Springer Authorizer until they finally make it OpenAccess as contractually agreed to
     title: 'Octagons Revisited: Elegant Proofs and Simplified Algorithms',
-    conference: 'to appear in SAS',
+    conference: 'SAS',
     year: 2023,
     description: 'Here, we provide simplified cubic time\
     algorithms for computing the closure of Octagon abstract relations both\
@@ -15,7 +26,26 @@ export const PAPERS: Paper[] = [
     incremental normalization. For the Octagon domain, we also provide\
     an improved construction for linear programming based best abstract\
     transformers for affine assignments.',
-    citation: ''
+    citation: '@inproceedings{DBLP:conf/sas/SchwarzS23,\n\
+      author       = {Michael Schwarz and\n\
+                      Helmut Seidl},\n\
+      editor       = {Manuel V. Hermenegildo and\n\
+                      Jos{\\\'{e}} F. Morales},\n\
+      title        = {Octagons Revisited - Elegant Proofs and Simplified Algorithms},\n\
+      booktitle    = {Static Analysis - 30th International Symposium, {SAS} 2023, Cascais,\n\
+                      Portugal, October 22-24, 2023, Proceedings},\n\
+      series       = {Lecture Notes in Computer Science},\n\
+      volume       = {14284},\n\
+      pages        = {485--507},\n\
+      publisher    = {Springer},\n\
+      year         = {2023},\n\
+      url          = {https://doi.org/10.1007/978-3-031-44245-2_21},\n\
+      doi          = {10.1007/978-3-031-44245-2_21},\n\
+      timestamp    = {Thu, 09 Nov 2023 21:13:05 +0100},\n\
+      biburl       = {https://dblp.org/rec/conf/sas/SchwarzS23.bib},\n\
+      bibsource    = {dblp computer science bibliography, https://dblp.org}\n\
+    }'
+    // Escaping as above is sufficient, yields correct output when copied.
   },
   {
     link: 'https://dl.acm.org/doi/abs/10.1145/3589250.3596140',
