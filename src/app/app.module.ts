@@ -11,6 +11,7 @@ import { DownloadsComponent } from './downloads/downloads.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AuthorsComponent } from './authors/authors.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AuthorsComponent } from './authors/authors.component';
     OverviewComponent,
     DownloadsComponent,
     NavbarComponent,
-    AuthorsComponent
+    AuthorsComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
