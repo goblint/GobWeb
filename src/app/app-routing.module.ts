@@ -5,14 +5,16 @@ import { DownloadsComponent } from './downloads/downloads.component';
 import { OverviewComponent } from './overview/overview.component';
 import { PapersComponent } from './papers/papers.component';
 import { AuthorsComponent } from './authors/authors.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent  },
   { path: 'home', component: HomeComponent },
   { path: 'downloads', component: DownloadsComponent },
   { path: 'overview', component: OverviewComponent },
   { path: 'papers', component: PapersComponent },
   { path: 'people', component: AuthorsComponent },
-  { path: '**', redirectTo: 'home' }
+  { path: '**', component: PagenotfoundComponent }
 ];
 
 @NgModule({
