@@ -2,11 +2,68 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
-    link: 'https://arxiv.org/abs/2310.16572',
-    title: 'Correctness Witness Validation by Abstract Interpretation',
-    conference: 'to appear at VMCAI',
+    link: '',
+    title: '2-Pointer Logic',
+    conference: 'to appear in "Taming the Infinities of Concurrency" - dedicated to Javier Esparza on the occasion of his 60th birthday',
     year: 2024,
+    description: 'For reasoning about properties of pointers, we consider conjunctions of equalities and dis-equalities\
+    between terms built up from address constants by addition of offsets and dereferencing. We call the\
+    resulting class of formulas 2-pointer logic. We introduce a quantitative version of congruence closure to\
+    provide polynomial time algorithms for deciding satisfiability as well as implication between formulas. By\
+    generalizing quantitative congruence closure to quantitative finite automata, we succeed in constructing\
+    canonical normal forms so that checking of equivalence between conjunctions reduces to syntactic\
+    equality.',
     citation: '',
+  authors: ['H. Seidl', 'J. Erhard', 'M. Schwarz', 'S. Tilscher']
+  },
+  {
+    link: '',
+    title: 'Goblint: Abstract Interpretation for Memory Safety and Termination',
+    conference: 'to appear at TACAS',
+    year: 2024,
+    description: 'Reports on Goblint\'s participation in SV-Comp and the new support for memory safety and termination.',
+    citation: '',
+  authors: ['S. Saan',  'J. Erhard', 'M. Schwarz', 'S. Bozhilov', 'K. Holter', 'S. Tilscher', 'V. Vojdani', 'H. Seidl']
+  },
+  {
+    link: '',
+    title: 'Goblint Validator: Correctness Witness Validation by Abstract Interpretation',
+    conference: 'to appear at TACAS',
+    year: 2024,
+    description: 'Reports on Goblint Validator\'s participation in SV-Comp.',
+    citation: '',
+  authors: ['S. Saan',  'J. Erhard', 'M. Schwarz', 'S. Bozhilov', 'K. Holter', 'S. Tilscher', 'V. Vojdani', 'H. Seidl']
+  },
+  {
+    link: 'https://link.springer.com/chapter/10.1007/978-3-031-50524-9_4',
+    title: 'Correctness Witness Validation by Abstract Interpretation',
+    conference: 'VMCAI',
+    year: 2024,
+    citation: '@inproceedings{DBLP:conf/vmcai/SaanSESTV24,\n\
+    author       = {Simmo Saan and\n\
+                    Michael Schwarz and\n\
+                    Julian Erhard and\n\
+                    Helmut Seidl and\n\
+                    Sarah Tilscher and\n\
+                    Vesal Vojdani},\n\
+    editor       = {Rayna Dimitrova and\n\
+                    Ori Lahav and\n\
+                    Sebastian Wolff},\n\
+    title        = {Correctness Witness Validation by Abstract Interpretation},\n\
+    booktitle    = {Verification, Model Checking, and Abstract Interpretation - 25th International\n\
+                    Conference, {VMCAI} 2024, London, United Kingdom, January 15-16, 2024,\n\
+                    Proceedings, Part {I}},\n\
+    series       = {Lecture Notes in Computer Science},\n\
+    volume       = {14499},\n\
+    pages        = {74--97},\n\
+    publisher    = {Springer},\n\
+    year         = {2024},\n\
+    url          = {https://doi.org/10.1007/978-3-031-50524-9\_4},\n\
+    doi          = {10.1007/978-3-031-50524-9\_4},\n\
+    timestamp    = {Sat, 10 Feb 2024 18:04:44 +0100},\n\
+    biburl       = {https://dblp.org/rec/conf/vmcai/SaanSESTV24.bib},\n\
+    bibsource    = {dblp computer science bibliography, https://dblp.org}\n\
+    }',
     description: 'Witnesses record automated program analysis results and make them exchangeable. To validate correctness witnesses through abstract interpretation, we introduce a novel abstract operation unassume.\
     This operator incorporates witness invariants into the abstract program state. Given suitable invariants, the unassume operation can accelerate fixpoint convergence and yield more precise results.\
     We demonstrate the feasibility of this approach by augmenting an abstract interpreter with unassume operators and evaluating the impact of incorporating witnesses on performance and precision.\
