@@ -2,9 +2,9 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
-    link: '',
+    link: 'https://link.springer.com/chapter/10.1007/978-3-031-56222-8_16',
     title: '2-Pointer Logic',
-    conference: 'to appear in "Taming the Infinities of Concurrency" - dedicated to Javier Esparza on the occasion of his 60th birthday',
+    conference: 'Taming the Infinities of Concurrency: Eassays Dedicated to Javier Esparza on the Occasion of His 60th Birthday',
     year: 2024,
     description: 'For reasoning about properties of pointers, we consider conjunctions of equalities and dis-equalities\
     between terms built up from address constants by addition of offsets and dereferencing. We call the\
@@ -13,8 +13,25 @@ export const PAPERS: Paper[] = [
     generalizing quantitative congruence closure to quantitative finite automata, we succeed in constructing\
     canonical normal forms so that checking of equivalence between conjunctions reduces to syntactic\
     equality.',
-    citation: '',
-  authors: ['H. Seidl', 'J. Erhard', 'M. Schwarz', 'S. Tilscher']
+    citation: '@Inbook{Seidl2024,\n\
+      author="Seidl, Helmut\n\
+      and Erhard, Julian\n\
+      and Schwarz, Michael\n\
+      and Tilscher, Sarah",\n\
+      editor="Kiefer, Stefan\n\
+      and K{\\v{r}}et{\'i}nsk{\'y}, Jan\n\
+      and Ku{\\v{c}}era, Anton{\'i}n",\n\
+      title="2-Pointer Logic",\n\
+      bookTitle="Taming the Infinities of Concurrency: Essays Dedicated to Javier Esparza on the Occasion of His 60th Birthday",\n\
+      year="2024",\n\
+      publisher="Springer Nature Switzerland",\n\
+      address="Cham",\n\
+      pages="281--307",\n\
+       isbn="978-3-031-56222-8",\n\
+      doi="10.1007/978-3-031-56222-8_16",\n\
+      url="https://doi.org/10.1007/978-3-031-56222-8_16"\n\
+      }',
+      authors: ['H. Seidl', 'J. Erhard', 'M. Schwarz', 'S. Tilscher']
   },
   {
     link: '',
