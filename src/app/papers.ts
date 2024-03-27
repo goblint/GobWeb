@@ -4,7 +4,7 @@ export const PAPERS: Paper[] = [
   {
     link: 'https://link.springer.com/chapter/10.1007/978-3-031-56222-8_16',
     title: '2-Pointer Logic',
-    conference: 'Taming the Infinities of Concurrency: Eassays Dedicated to Javier Esparza on the Occasion of His 60th Birthday',
+    conference: 'Taming the Infinities of Concurrency: Essays Dedicated to Javier Esparza on the Occasion of His 60th Birthday',
     year: 2024,
     description: 'For reasoning about properties of pointers, we consider conjunctions of equalities and dis-equalities\
     between terms built up from address constants by addition of offsets and dereferencing. We call the\
