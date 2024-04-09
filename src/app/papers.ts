@@ -34,21 +34,56 @@ export const PAPERS: Paper[] = [
       authors: ['H. Seidl', 'J. Erhard', 'M. Schwarz', 'S. Tilscher']
   },
   {
-    link: '',
+    link: 'https://link.springer.com/chapter/10.1007/978-3-031-57256-2_25',
     title: 'Goblint: Abstract Interpretation for Memory Safety and Termination',
-    conference: 'to appear at TACAS',
+    conference: 'TACAS',
     year: 2024,
     description: 'Reports on Goblint\'s participation in SV-Comp and the new support for memory safety and termination.',
-    citation: '',
+    citation: '@InProceedings{10.1007/978-3-031-57256-2_25,\n\
+    author="Saan, Simmo\n\
+    and Erhard, Julian\n\
+    and Schwarz, Michael\n\
+    and Bozhilov, Stanimir\n\
+    and Holter, Karoliine\n\
+    and Tilscher, Sarah\n\
+    and Vojdani, Vesal\n\
+    and Seidl, Helmut",\n\
+    editor="Finkbeiner, Bernd\n\
+    and Kov{\\\'a}cs, Laura",\n\
+    title="Goblint: Abstract Interpretation for Memory Safety and Termination",\n\
+    booktitle="Tools and Algorithms for the Construction and Analysis of Systems",\n\
+    year="2024",\n\
+    publisher="Springer Nature Switzerland",\n\
+    address="Cham",\n\
+    pages="381--386",\n\
+    isbn="978-3-031-57256-2"\n\
+    }',
   authors: ['S. Saan',  'J. Erhard', 'M. Schwarz', 'S. Bozhilov', 'K. Holter', 'S. Tilscher', 'V. Vojdani', 'H. Seidl']
   },
   {
-    link: '',
+    link: 'https://link.springer.com/chapter/10.1007/978-3-031-57256-2_17',
     title: 'Goblint Validator: Correctness Witness Validation by Abstract Interpretation',
-    conference: 'to appear at TACAS',
+    conference: 'TACAS',
     year: 2024,
     description: 'Reports on Goblint Validator\'s participation in SV-Comp.',
-    citation: '',
+    citation: '@InProceedings{10.1007/978-3-031-57256-2_17,\n\
+    author="Saan, Simmo\n\
+    and Erhard, Julian\n\
+    and Schwarz, Michael\n\
+    and Bozhilov, Stanimir\n\
+    and Holter, Karoliine\n\
+    and Tilscher, Sarah\n\
+    and Vojdani, Vesal\n\
+    and Seidl, Helmut",\n\
+    editor="Finkbeiner, Bernd\n\
+    and Kov{\\\'a}cs, Laura",\n\
+    title="Goblint Validator: Correctness Witness Validation by Abstract Interpretation",\n\
+    booktitle="Tools and Algorithms for the Construction and Analysis of Systems",\n\
+    year="2024",\n\
+    publisher="Springer Nature Switzerland",\n\
+    address="Cham",\n\
+    pages="335--340",\n\isbn="978-3-031-57256-2"\n\
+    }',
   authors: ['S. Saan',  'J. Erhard', 'M. Schwarz', 'S. Bozhilov', 'K. Holter', 'S. Tilscher', 'V. Vojdani', 'H. Seidl']
   },
   {
