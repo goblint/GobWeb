@@ -2,6 +2,23 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
+  link: 'https://link.springer.com/article/10.1007/s10009-024-00755-0',
+  title: 'Non-numerical weakly relational domains',
+  conference: 'STTT',
+  year: 2024,
+  description: 'The weakly relational domain of Octagons offers a decent compromise between precision and efficiency for numerical properties. Here, we are concerned with the construction of non-numerical relational domains. We provide a general construction of weakly relational domains, which we exemplify with an extension of constant propagation by disjunctions.',
+  citation: '@article{10.1007/s10009-024-00755-0,\n\
+    author = {Seidl, Helmut and Erhard, Julian and Tilscher, Sarah and Schwarz, Michael},\n\
+    year = {2024},\n\
+    month = {06},\n\
+    pages = {1-16},\n\
+    title = {Non-numerical weakly relational domains},\n\
+    journal = {International Journal on Software Tools for Technology Transfer},\n\
+    doi = {10.1007/s10009-024-00755-0}\n\
+    }',
+  authors: ['H. Seidl', 'J. Erhard', 'S. Tilscher', 'M. Schwarz']
+  },
+  {
     link: 'https://link.springer.com/chapter/10.1007/978-3-031-56222-8_16',
     title: '2-Pointer Logic',
     conference: 'Taming the Infinities of Concurrency: Essays Dedicated to Javier Esparza on the Occasion of His 60th Birthday',
