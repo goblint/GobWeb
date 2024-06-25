@@ -2,6 +2,31 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
+  link: 'https://dl.acm.org/doi/proceedings/10.1145/3652588',
+  title: 'When to Stop Going Down the Rabbit Hole: Taming Context-Sensitivity on the Fly',
+  conference: 'SOAP@PLDI',
+  year: 2024,
+  description: 'Presents a general framework for context-sensitivity that allows formalizing not only known approaches such as full context or call strings but also combinations of these. We propose three generic lifters in this framework to bound the number of encountered contexts on the fly.',
+  citation: '@inproceedings{10.1145/3652588.3663321,\n\
+    author = {Erhard, Julian and Schinabeck, Johanna Franziska and Schwarz, Michael and Seidl, Helmut},\n\
+    title = {When to Stop Going Down the Rabbit Hole: Taming Context-Sensitivity on the Fly},\n\
+    year = {2024},\n\
+    isbn = {9798400706219},\n\
+    publisher = {Association for Computing Machinery},\n\
+    address = {New York, NY, USA},\n\
+    url = {https://doi.org/10.1145/3652588.3663321},\n\
+    doi = {10.1145/3652588.3663321},\n\
+    abstract = {Context-sensitive analysis of programs containing recursive procedures may be expensive, in particular, when using expressive domains, rendering the set of possible contexts large or even infinite. Here, we present a general framework for context-sensitivity that allows formalizing not only known approaches such as full context or call strings but also combinations of these. We propose three generic lifters in this framework to bound the number of encountered contexts on the fly. These lifters are implemented within the abstract interpreter Goblint and compared to existing approaches to context-sensitivity on the SV-COMP benchmark suite. On a subset of recursive benchmarks, all proposed lifters manage to reduce the number of stack overflows and timeouts compared to a full context approach, with one of them improving the number of correct verdicts by 31\% and showing promising results on the considered SV-COMP categories.},\n\
+    booktitle = {Proceedings of the 13th ACM SIGPLAN International Workshop on the State Of the Art in Program Analysis},\n\
+    pages = {35-44},\n\
+    numpages = {10},\n\
+    keywords = {abstract interpretation, context-sensitive analysis, software verification, static program analysis},\n\
+    location = {Copenhagen, Denmark},\n\
+    series = {SOAP 2024}\n\
+    }',
+  authors: ['J. Erhard', 'J. F. Schinabeck', 'M. Schwarz', 'H. Seidl']
+  },
+  {
   link: 'https://link.springer.com/article/10.1007/s10009-024-00755-0',
   title: 'Non-numerical weakly relational domains',
   conference: 'STTT',
