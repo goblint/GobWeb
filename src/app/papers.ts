@@ -2,6 +2,48 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
+  link: 'https://dl.acm.org/doi/proceedings/10.1145/3652588',
+  title: 'When to Stop Going Down the Rabbit Hole: Taming Context-Sensitivity on the Fly',
+  conference: 'SOAP@PLDI',
+  year: 2024,
+  description: 'Presents a general framework for context-sensitivity that allows formalizing not only known approaches such as full context or call strings but also combinations of these. We propose three generic lifters in this framework to bound the number of encountered contexts on the fly.',
+  citation: '@inproceedings{10.1145/3652588.3663321,\n\
+    author = {Erhard, Julian and Schinabeck, Johanna Franziska and Schwarz, Michael and Seidl, Helmut},\n\
+    title = {When to Stop Going Down the Rabbit Hole: Taming Context-Sensitivity on the Fly},\n\
+    year = {2024},\n\
+    isbn = {9798400706219},\n\
+    publisher = {Association for Computing Machinery},\n\
+    address = {New York, NY, USA},\n\
+    url = {https://doi.org/10.1145/3652588.3663321},\n\
+    doi = {10.1145/3652588.3663321},\n\
+    abstract = {Context-sensitive analysis of programs containing recursive procedures may be expensive, in particular, when using expressive domains, rendering the set of possible contexts large or even infinite. Here, we present a general framework for context-sensitivity that allows formalizing not only known approaches such as full context or call strings but also combinations of these. We propose three generic lifters in this framework to bound the number of encountered contexts on the fly. These lifters are implemented within the abstract interpreter Goblint and compared to existing approaches to context-sensitivity on the SV-COMP benchmark suite. On a subset of recursive benchmarks, all proposed lifters manage to reduce the number of stack overflows and timeouts compared to a full context approach, with one of them improving the number of correct verdicts by 31\% and showing promising results on the considered SV-COMP categories.},\n\
+    booktitle = {Proceedings of the 13th ACM SIGPLAN International Workshop on the State Of the Art in Program Analysis},\n\
+    pages = {35-44},\n\
+    numpages = {10},\n\
+    keywords = {abstract interpretation, context-sensitive analysis, software verification, static program analysis},\n\
+    location = {Copenhagen, Denmark},\n\
+    series = {SOAP 2024}\n\
+    }',
+  authors: ['J. Erhard', 'J. F. Schinabeck', 'M. Schwarz', 'H. Seidl']
+  },
+  {
+  link: 'https://link.springer.com/article/10.1007/s10009-024-00755-0',
+  title: 'Non-numerical weakly relational domains',
+  conference: 'STTT',
+  year: 2024,
+  description: 'The weakly relational domain of Octagons offers a decent compromise between precision and efficiency for numerical properties. Here, we are concerned with the construction of non-numerical relational domains. We provide a general construction of weakly relational domains, which we exemplify with an extension of constant propagation by disjunctions.',
+  citation: '@article{10.1007/s10009-024-00755-0,\n\
+    author = {Seidl, Helmut and Erhard, Julian and Tilscher, Sarah and Schwarz, Michael},\n\
+    year = {2024},\n\
+    month = {06},\n\
+    pages = {1-16},\n\
+    title = {Non-numerical weakly relational domains},\n\
+    journal = {International Journal on Software Tools for Technology Transfer},\n\
+    doi = {10.1007/s10009-024-00755-0}\n\
+    }',
+  authors: ['H. Seidl', 'J. Erhard', 'S. Tilscher', 'M. Schwarz']
+  },
+  {
     link: 'https://link.springer.com/chapter/10.1007/978-3-031-56222-8_16',
     title: '2-Pointer Logic',
     conference: 'Taming the Infinities of Concurrency: Essays Dedicated to Javier Esparza on the Occasion of His 60th Birthday',
@@ -480,6 +522,28 @@ export const PAPERS: Paper[] = [
     isbn=\"978-3-662-53413-7\"\n\
     }\n',
     authors: ['S. Schulze Frielinghaus', 'H. Seidl', 'R. Vogler']
+  },
+  {
+  link: 'https://link.springer.com/chapter/10.1007/978-3-319-27810-0_14',
+  title: 'Enhancing Top-Down Solving with Widening and Narrowing',
+  conference: 'International Conference on Semantics, Logics, and Calculi',
+  year: 2016,
+  description: 'Presents an enhancement of the generic fixpoint algorithm TD which can deal with widening and narrowing even for non-monotonic systems of equations.',
+  citation: '\@Inbook{Apinis2016\,\n\
+    author=\"Apinis\, Kalmer and Seidl\, Helmut and Vojdani\, Vesal\"\,\n\
+    editor=\"Probst, Christian W. and Hankin, Chris and Hansen, Ren\{\'e\} Rydhof\"\,\n\
+    title=\"Enhancing Top-Down Solving with Widening and Narrowing\"\,\n\
+    bookTitle=\"Semantics, Logics, and Calculi: Essays Dedicated to Hanne Riis Nielson and Flemming Nielson on the Occasion of Their 60th Birthdays\"\,\n\
+    year=\"2016\"\,\n\
+    publisher=\"Springer International Publishing\"\,\n\
+    address=\"Cham\"\,\n\
+    pages=\"272--288\"\,\n\
+    abstract=\"We present an enhancement of the generic fixpoint algorithm TD which can deal with widening and narrowing even for non-monotonic systems of equations. In contrast to corresponding enhancements proposed for other standard fixpoint algorithms\, no extra priorities on variables are required. Still\, a mechanism can be devised so that occurrences of the widening/narrowing operator are inserted as well as removed dynamically.\"\,\n\
+    isbn=\"978-3-319-27810-0\"\,\n\
+    doi=\"10.1007/978-3-319-27810-0_14\"\,\n\
+    url=\"https://doi.org/10.1007/978-3-319-27810-0_14\"\n\
+    \}\n',
+  authors: ['K. Apinis', 'H. Seidl', 'V. Vojdani']
   },
   {
   link: '/assets/papers/flags.pdf',
