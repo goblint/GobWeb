@@ -482,6 +482,28 @@ export const PAPERS: Paper[] = [
     authors: ['S. Schulze Frielinghaus', 'H. Seidl', 'R. Vogler']
   },
   {
+  link: 'https://link.springer.com/chapter/10.1007/978-3-319-27810-0_14',
+  title: 'Enhancing Top-Down Solving with Widening and Narrowing',
+  conference: 'International Conference on Semantics, Logics, and Calculi',
+  year: 2016,
+  description: 'Presents an enhancement of the generic fixpoint algorithm TD which can deal with widening and narrowing even for non-monotonic systems of equations.',
+  citation: '\@Inbook{Apinis2016\,\n\
+    author=\"Apinis\, Kalmer and Seidl\, Helmut and Vojdani\, Vesal\"\,\n\
+    editor=\"Probst, Christian W. and Hankin, Chris and Hansen, Ren\{\'e\} Rydhof\"\,\n\
+    title=\"Enhancing Top-Down Solving with Widening and Narrowing\"\,\n\
+    bookTitle=\"Semantics, Logics, and Calculi: Essays Dedicated to Hanne Riis Nielson and Flemming Nielson on the Occasion of Their 60th Birthdays\"\,\n\
+    year=\"2016\"\,\n\
+    publisher=\"Springer International Publishing\"\,\n\
+    address=\"Cham\"\,\n\
+    pages=\"272--288\"\,\n\
+    abstract=\"We present an enhancement of the generic fixpoint algorithm TD which can deal with widening and narrowing even for non-monotonic systems of equations. In contrast to corresponding enhancements proposed for other standard fixpoint algorithms\, no extra priorities on variables are required. Still\, a mechanism can be devised so that occurrences of the widening/narrowing operator are inserted as well as removed dynamically.\"\,\n\
+    isbn=\"978-3-319-27810-0\"\,\n\
+    doi=\"10.1007/978-3-319-27810-0_14\"\,\n\
+    url=\"https://doi.org/10.1007/978-3-319-27810-0_14\"\n\
+    \}\n',
+  authors: ['K. Apinis', 'H. Seidl', 'V. Vojdani']
+  },
+  {
   link: '/assets/papers/flags.pdf',
   title: 'Precise Analysis of Value-Dependent Synchronization in Priority Scheduled Programs',
   conference: 'VMCAI',
