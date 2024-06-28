@@ -37,23 +37,19 @@
         <td>{{ paper.year }}</td>
         <td>
           <button
-            mdbBtn
-            type="button"
-            class="btn unique-color text-white"
-            outline="false"
+            class="btn-custom far fa-copy"
             mdbWavesEffect
             [cdkCopyToClipboard]="paper.citation"
             [cdkCopyToClipboardAttempts]="7"
             value="click to copy"
-          >
-            <mdb-icon far icon="copy"></mdb-icon></button
+          ></button
           ><br />
         </td>
         <td>
             <a
             *ngIf="paper.video != null"
             href="{{ paper.video }}"
-            class="fab fa-youtube"
+            class="btn-custom fab fa-youtube"
             target="_blank"
             rel="noopener noreferrer"
             ></a>
