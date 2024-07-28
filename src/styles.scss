@@ -25,3 +25,17 @@ a {
 .container {
   padding-top: 100px;
 }
+
+.btn-custom {
+  color: $celadon-blue;
+  border-color: $celadon-blue;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px solid transparent;
+  padding: 0.25rem 0.25rem;
+  font-size: 1.25rem;
+}
+
+.btn-custom:focus, .btn-custom.focus {
+  outline: 0;
+}

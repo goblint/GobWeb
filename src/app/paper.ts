@@ -6,4 +6,5 @@ export interface Paper {
   description: string;
   citation: string;
   authors: string[];
+  video: string;
 }

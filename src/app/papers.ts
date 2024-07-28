@@ -24,7 +24,8 @@ export const PAPERS: Paper[] = [
     location = {Copenhagen, Denmark},\n\
     series = {SOAP 2024}\n\
     }',
-  authors: ['J. Erhard', 'J. F. Schinabeck', 'M. Schwarz', 'H. Seidl']
+  authors: ['J. Erhard', 'J. F. Schinabeck', 'M. Schwarz', 'H. Seidl'],
+  video: '//youtu.be/5ylZroZT1gw'
   },
   {
   link: 'https://link.springer.com/article/10.1007/s10009-024-00755-0',
@@ -41,7 +42,8 @@ export const PAPERS: Paper[] = [
     journal = {International Journal on Software Tools for Technology Transfer},\n\
     doi = {10.1007/s10009-024-00755-0}\n\
     }',
-  authors: ['H. Seidl', 'J. Erhard', 'S. Tilscher', 'M. Schwarz']
+  authors: ['H. Seidl', 'J. Erhard', 'S. Tilscher', 'M. Schwarz'],
+  video: null
   },
   {
     link: 'https://link.springer.com/chapter/10.1007/978-3-031-56222-8_16',
@@ -73,7 +75,8 @@ export const PAPERS: Paper[] = [
       doi="10.1007/978-3-031-56222-8_16",\n\
       url="https://doi.org/10.1007/978-3-031-56222-8_16"\n\
       }',
-      authors: ['H. Seidl', 'J. Erhard', 'M. Schwarz', 'S. Tilscher']
+      authors: ['H. Seidl', 'J. Erhard', 'M. Schwarz', 'S. Tilscher'],
+  video: null
   },
   {
     link: 'https://link.springer.com/chapter/10.1007/978-3-031-57256-2_25',
@@ -100,7 +103,8 @@ export const PAPERS: Paper[] = [
     pages="381--386",\n\
     isbn="978-3-031-57256-2"\n\
     }',
-  authors: ['S. Saan',  'J. Erhard', 'M. Schwarz', 'S. Bozhilov', 'K. Holter', 'S. Tilscher', 'V. Vojdani', 'H. Seidl']
+  authors: ['S. Saan',  'J. Erhard', 'M. Schwarz', 'S. Bozhilov', 'K. Holter', 'S. Tilscher', 'V. Vojdani', 'H. Seidl'],
+  video: null
   },
   {
     link: 'https://link.springer.com/chapter/10.1007/978-3-031-57256-2_17',
@@ -126,7 +130,8 @@ export const PAPERS: Paper[] = [
     address="Cham",\n\
     pages="335--340",\n\isbn="978-3-031-57256-2"\n\
     }',
-  authors: ['S. Saan',  'J. Erhard', 'M. Schwarz', 'S. Bozhilov', 'K. Holter', 'S. Tilscher', 'V. Vojdani', 'H. Seidl']
+  authors: ['S. Saan',  'J. Erhard', 'M. Schwarz', 'S. Bozhilov', 'K. Holter', 'S. Tilscher', 'V. Vojdani', 'H. Seidl'],
+  video: null
   },
   {
     link: 'https://link.springer.com/chapter/10.1007/978-3-031-50524-9_4',
@@ -162,7 +167,8 @@ export const PAPERS: Paper[] = [
     This operator incorporates witness invariants into the abstract program state. Given suitable invariants, the unassume operation can accelerate fixpoint convergence and yield more precise results.\
     We demonstrate the feasibility of this approach by augmenting an abstract interpreter with unassume operators and evaluating the impact of incorporating witnesses on performance and precision.\
     ',
-    authors: ['S. Saan', 'M. Schwarz', 'J. Erhard', 'H. Seidl', 'S. Tilscher', 'V. Vojdani']
+    authors: ['S. Saan', 'M. Schwarz', 'J. Erhard', 'H. Seidl', 'S. Tilscher', 'V. Vojdani'],
+  video: 'https://youtu.be/DgJRwysM5io'
   },
   {
     link: 'https://rdcu.be/dpwHX', // Springer Authorizer until they finally make it OpenAccess as contractually agreed to
@@ -198,7 +204,8 @@ export const PAPERS: Paper[] = [
       bibsource    = {dblp computer science bibliography, https://dblp.org}\n\
     }',
     // Escaping as above is sufficient, yields correct output when copied.
-    authors: ['M. Schwarz', 'H. Seidl']
+    authors: ['M. Schwarz', 'H. Seidl'],
+  video: 'https://youtu.be/qgbB1BecPKM'
   },
   {
     link: 'https://dl.acm.org/doi/abs/10.1145/3589250.3596140',
@@ -224,7 +231,8 @@ export const PAPERS: Paper[] = [
     url          = \{https://doi.org/10.1145/3589250.3596140\}\,\n\
     doi          = \{10.1145/3589250.3596140\}\,\n\
   \}\n',
-  authors: ['M.Schwarz', 'J. Erhard', 'V. Vojdani', 'S. Saan', 'H. Seidl']
+  authors: ['M.Schwarz', 'J. Erhard', 'V. Vojdani', 'S. Saan', 'H. Seidl'],
+  video: null
   },
   {
     link: 'https://link.springer.com/chapter/10.1007/978-3-031-30044-8_2',
@@ -256,7 +264,8 @@ export const PAPERS: Paper[] = [
       biburl       = \{https://dblp.org/rec/conf/esop/SchwarzSSEV23.bib\}\,\n\
       bibsource    = \{dblp computer science bibliography\, https://dblp.org\}\n\
     \}\n',
-    authors: ['M. Schwarz', 'S. Saan', 'H. Seidl', 'J. Erhard', 'V. Vojdani']
+    authors: ['M. Schwarz', 'S. Saan', 'H. Seidl', 'J. Erhard', 'V. Vojdani'],
+  video: null
   },
   {
     link: 'https://link.springer.com/chapter/10.1007/978-3-031-30820-8_34',
@@ -291,7 +300,8 @@ export const PAPERS: Paper[] = [
     biburl       = \{https://dblp.org/rec/conf/tacas/SaanSEPSTV23.bib\}\,\n\
     bibsource    = \{dblp computer science bibliography\, https://dblp.org\}\n\
   \}\n',
-  authors: ['S. Saan', 'M. Schwarz', 'J. Erhard', 'M. Pietsch', 'H. Seidl', 'S. Tilscher', 'V. Vojdani']
+  authors: ['S. Saan', 'M. Schwarz', 'J. Erhard', 'M. Pietsch', 'H. Seidl', 'S. Tilscher', 'V. Vojdani'],
+  video: null
   },
   {
     link: 'https://arxiv.org/abs/2209.10445',
@@ -310,7 +320,8 @@ export const PAPERS: Paper[] = [
       year = \{2022\}\,\n\
       copyright = \{arXiv.org perpetual, non-exclusive license\}\,\n\
       \}\n',
-      authors: ['J. Erhard', 'S. Saan', 'S. Tilscher', 'M. Schwarz', 'K. Holter', 'V. Vojdani', 'H. Seidl']
+      authors: ['J. Erhard', 'S. Saan', 'S. Tilscher', 'M. Schwarz', 'K. Holter', 'V. Vojdani', 'H. Seidl'],
+  video: null
   },
   {
     link: 'https://link.springer.com/chapter/10.1007/978-981-19-9601-6_9',
@@ -337,7 +348,8 @@ export const PAPERS: Paper[] = [
       isbn="978-981-19-9601-6"\,\
       doi="10.1007/978-981-19-9601-6_9"\,\
       \}',
-      authors: ['S. Tilscher', 'Y. Stade', 'M. Schwarz', 'R. Vogler', 'H. Seidl']
+      authors: ['S. Tilscher', 'Y. Stade', 'M. Schwarz', 'R. Vogler', 'H. Seidl'],
+  video: 'https://youtu.be/ZJZRThqF5WE'
   },
   {
     link: 'https://www.cambridge.org/core/journals/mathematical-structures-in-computer-science/article/three-improvements-to-the-topdown-solver/CE9A5F2A3FD62ECF9E6683598322CD52',
@@ -356,7 +368,8 @@ export const PAPERS: Paper[] = [
       year=\{2021\}\,\n\
       pages=\{1090–1134\}\,\n\
       \}\n',
-      authors: ['H. Seidl', 'R. Vogler']
+      authors: ['H. Seidl', 'R. Vogler'],
+  video: null
   },
   {
     link: 'https://link.springer.com/chapter/10.1007/978-3-030-88806-0_18',
@@ -383,7 +396,8 @@ export const PAPERS: Paper[] = [
       abstract=\{We give thread-modular non-relational value analyses as abstractions of a local trace semantics. The semantics as well as the analyses are formulated by means of global invariants and side-effecting constraint systems. We show that a generalization of the analysis provided by the static analyzer Goblint as well as a natural improvement of Antoine Min\{\\\'e\}\'s approach can be obtained as instances of this general scheme. We show that these two analyses are incomparable w.r.t. precision and provide a refinement which improves on both precision-wise. We also report on a preliminary experimental comparison of the given analyses on a meaningful suite of benchmarks.\},\n\
       isbn=\{978-3-030-88806-0\}\n\
       \}',
-      authors: ['M. Schwarz', 'S. Saan', 'H. Seidl', 'K. Apinis', 'J. Erhard', 'V. Vojdani']
+      authors: ['M. Schwarz', 'S. Saan', 'H. Seidl', 'K. Apinis', 'J. Erhard', 'V. Vojdani'],
+  video: 'https://youtu.be/hWHvePmJY2k'
   },
   {
   link: 'https://link.springer.com/chapter/10.1007%2F978-3-030-72013-1_28',
@@ -402,7 +416,8 @@ export const PAPERS: Paper[] = [
     Abstract = \{Goblint is a static analysis framework for C programs specializing in data race analysis. It relies on thread-modular abstract interpretation where thread interferences are accounted for by means of flow-insensitive global invariants.\}\,\n\
     URL = \{https://europepmc.org/articles/PMC7984535\}\,\n\
   \}\n',
-  authors: ['S. Saan', 'M. Schwarz', 'K. Apinis', 'J. Erhard', 'H. Seidl', 'R. Vogler', 'V. Vojdani']
+  authors: ['S. Saan', 'M. Schwarz', 'K. Apinis', 'J. Erhard', 'H. Seidl', 'R. Vogler', 'V. Vojdani'],
+  video: 'https://youtu.be/L_UmMI84vpE'
   },
   {
   link: 'https://link.springer.com/chapter/10.1007/978-3-030-41103-9_5',
@@ -428,7 +443,8 @@ export const PAPERS: Paper[] = [
     doi="10.1007/978-3-030-41103-9_5"\,\n\
     url="https://doi.org/10.1007/978-3-030-41103-9_5"\n\
     }\n',
-    authors: ['H. Seidl', 'J. Erhard', 'R. Vogler']
+    authors: ['H. Seidl', 'J. Erhard', 'R. Vogler'],
+  video: null
   },
   {
   link: 'https://dl.acm.org/doi/abs/10.1145/3236950.3236967',
@@ -453,7 +469,8 @@ export const PAPERS: Paper[] = [
     location = \{Frankfurt am Main\, Germany}\,\n\
     series = \{PPDP \'18\}\n\
     \}\n',
-    authors: ['H. Seidl', 'R. Vogler']
+    authors: ['H. Seidl', 'R. Vogler'],
+  video: null
   },
   {
   link: 'https://link.springer.com/chapter/10.1007/978-3-319-68167-2_1',
@@ -474,7 +491,8 @@ export const PAPERS: Paper[] = [
     pages=\{3--22\}\,\n\
     isbn=\{978-3-319-68167-2\}\n\
     \}\n',
-    authors: ['H. Seidl', 'R. Vogler']
+    authors: ['H. Seidl', 'R. Vogler'],
+  video: null
   },
   {
   link: 'http://dl.acm.org/authorize?N27656',
@@ -499,7 +517,8 @@ export const PAPERS: Paper[] = [
     location = \{Singapore\, Singapore}\,\n\
     series = \{ASE 2016\}\n\
     \}\n',
-    authors: ['V. Vojdani', 'K. Apinis', 'V. Rõtov', 'H. Seidl', 'V. Vene', 'R. Vogler']
+    authors: ['V. Vojdani', 'K. Apinis', 'V. Rõtov', 'H. Seidl', 'V. Vene', 'R. Vogler'],
+  video: null
   },
   {
   link: 'http://dx.doi.org/10.1007/978-3-662-53413-7_22',
@@ -521,7 +540,8 @@ export const PAPERS: Paper[] = [
     abstract=\"Interprocedural analysis by means of partial tabulation of summary functions may not terminate when the same procedure is analyzed for infinitely many abstract calling contexts or when the abstract domain has infinite strictly ascending chains. As a remedy\, we present a novel local solver for general abstract equation systems\, be they monotonic or not\, and prove that this solver fails to terminate only when infinitely many variables are encountered. We clarify in which sense the computed results are sound. Moreover\, we show that interprocedural analysis performed by this novel local solver\, is guaranteed to terminate for all non-recursive programs --- irrespective of whether the complete lattice is infinite or has infinite strictly ascending or descending chains\.\"\,\n\
     isbn=\"978-3-662-53413-7\"\n\
     }\n',
-    authors: ['S. Schulze Frielinghaus', 'H. Seidl', 'R. Vogler']
+    authors: ['S. Schulze Frielinghaus', 'H. Seidl', 'R. Vogler'],
+  video: null
   },
   {
   link: 'https://link.springer.com/chapter/10.1007/978-3-319-27810-0_14',
@@ -543,7 +563,8 @@ export const PAPERS: Paper[] = [
     doi=\"10.1007/978-3-319-27810-0_14\"\,\n\
     url=\"https://doi.org/10.1007/978-3-319-27810-0_14\"\n\
     \}\n',
-  authors: ['K. Apinis', 'H. Seidl', 'V. Vojdani']
+  authors: ['K. Apinis', 'H. Seidl', 'V. Vojdani'],
+  video: null
   },
   {
   link: '/assets/papers/flags.pdf',
@@ -560,7 +581,8 @@ export const PAPERS: Paper[] = [
     volume = \{8318\}\,\n\
     doi = \{10.1007\/978-3-642-54013-4_2\}\n\
     \}\n',
-    authors: ['M. D. Schwarz', 'H. Seidl', 'V. Vojdani', 'K. Apinis']
+    authors: ['M. D. Schwarz', 'H. Seidl', 'V. Vojdani', 'K. Apinis'],
+  video: null
   },
   {
   link: 'http://dl.acm.org/authorize?N27657',
@@ -605,7 +627,8 @@ export const PAPERS: Paper[] = [
     location = \{Seattle\, Washington\, USA\}\,\n\
     series = \{PLDI \'13\}\n\
     \}\n',
-    authors: ['K. Apinis', 'H. Seidl', 'V. Vojdani']
+    authors: ['K. Apinis', 'H. Seidl', 'V. Vojdani'],
+  video: null
   },
   {
   link: '/assets/papers/side.pdf',
@@ -628,7 +651,8 @@ export const PAPERS: Paper[] = [
     abstract=\"Side-effecting constraint systems were originally introduced for the analysis of multi-threaded code [22]. In this paper, we show how this formalism provides a unified framework for realizing efficient interprocedural analyses where the amount of context-sensitivity can be tweaked and where the context-sensitive analyses of local properties can be combined with flow-insensitive analyses of global properties, e.g., about the heap. Side-effecting constraint systems thus form the ideal basis for building general-purpose infrastructures for static analysis. One such infrastructure is the analyzer generator Goblint, which we used to practically evaluate this approach on real-world examples.\"\,\n\
     isbn=\"978-3-642-35182-2\"\n\
     \}\n',
-    authors: ['K. Apinis', 'H. Seidl', 'V. Vojdani']
+    authors: ['K. Apinis', 'H. Seidl', 'V. Vojdani'],
+  video: null
   },
   {
   link: '/assets/papers/class.pdf',
@@ -650,7 +674,8 @@ export const PAPERS: Paper[] = [
     abstract=\"We present a combined class-modular points-to and class-escape analysis that allows to analyze class declarations even if no information about the code that invokes the class\'s methods is available as is the case for e.g. shared libraries. Any standard whole-program or summary-based points-to analysis can be plugged into our framework and thus be transformed into a class-modular\, class-escape and points-to analysis. The analysis framework uses the flow restrictions imposed by the access modifiers (e.g. private\, public and protected in Java) to find all fields that may be modified by code that is not part of the class declaration. These fields escape the class. Unlike method-based summaries instantiated with an unknown context\, our analysis framework can give detailed points-to information for non-escaping fields. In addition\, the knowledge of which fields belong to the region that does not escape a class can be exploited to perform other analysis like class-modular object in-lining [6] more efficiently or enable the automatic inference of class invariants [10]. We prove the soundness of the analysis and present a set of benchmarks showing that the analysis is suitable to analyze real world code and that more than 75{\%} of the fields from the benchmarked classes are identified as non-escaping.\"\,\n\
     isbn=\"978-3-642-28891-3\"\n\
     \}\n',
-      authors: ['A. Herz', 'K. Apinis']
+      authors: ['A. Herz', 'K. Apinis'],
+  video: null
   },
   {
   link: 'http://dl.acm.org/authorize?N27658',
@@ -695,7 +720,8 @@ export const PAPERS: Paper[] = [
     location = \{Austin\, Texas\, USA\}\,\n\
     series = \{POPL \'11\}\n\
     \}\n',
-    authors: ['M. D. Schwarz', 'H. Seidl', 'V. Vojdani', 'P. Lammich', 'M. Müller-Olm']
+    authors: ['M. D. Schwarz', 'H. Seidl', 'V. Vojdani', 'P. Lammich', 'M. Müller-Olm'],
+  video: null
   },
   {
   link: '/assets/papers/coq.pdf',
@@ -711,7 +737,8 @@ export const PAPERS: Paper[] = [
     booktitle = \{SAS\}\,\n\
     pages = \{340-355\}\n\
   \}\n',
-  authors: ['M. Hofmann', 'A. Karbyshev', 'H. Seidl']
+  authors: ['M. Hofmann', 'A. Karbyshev', 'H. Seidl'],
+  video: null
   },
   {
   link: '/assets/papers/regions.pdf',
@@ -733,7 +760,8 @@ export const PAPERS: Paper[] = [
     abstract=\"Automatic race detection of C programs requires fast\, yet sufficiently precise analysis of dynamic memory. Therefore\, we present a region-based pointer analysis which seeks to identify disjoint regions of dynamically allocated objects to ensure that write accesses to the same region are always protected by the same mutexes. Our approach has been implemented within the interprocedural analyzer of concurrent C programs GobLint and we have successfully applied it on code from the Linux kernel\, such as the access vector cache. This code relies on a synchronized hash table where an array of doubly linked lists is protected by an array of locks.\"\,\n\
     isbn=\"978-3-642-03237-0\"\n\
     \}\n',
-    authors: ['H. Seidl', 'V. Vojdani']
+    authors: ['H. Seidl', 'V. Vojdani'],
+  video: null
   },
   {
   link: '/assets/papers/must-alias.pdf',
@@ -762,7 +790,8 @@ export const PAPERS: Paper[] = [
     biburl    = \{https://dblp.org/rec/conf/fm/SeidlVV09.bib\}\,\n\
     bibsource = \{dblp computer science bibliography\, https://dblp.org\}\n\
   \}\n',
-  authors: ['H. Seidl', 'V. Vojdani', 'V. Vene']
+  authors: ['H. Seidl', 'V. Vojdani', 'V. Vene'],
+  video: null
   },
   {
   link: '/assets/papers/goblint.pdf',
@@ -778,7 +807,8 @@ export const PAPERS: Paper[] = [
     pages = \{141--155\}\,\n\
     year = \{2009\}\,\n\
   \}\n',
-  authors: ['V. Vojdani', 'V. Vene']
+  authors: ['V. Vojdani', 'V. Vene'],
+  video: null
   },
   {
   link: '/assets/papers/invariants.pdf',
@@ -795,6 +825,7 @@ export const PAPERS: Paper[] = [
     pages = \{413--436\}\,\n\
     year = \{2003\}\,\n\
   \}\n',
-  authors: ['H. Seidl', 'V. Vene', 'M. Müller-Olm']
+  authors: ['H. Seidl', 'V. Vene', 'M. Müller-Olm'],
+  video: null
   }
 ];

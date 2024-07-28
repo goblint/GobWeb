@@ -7,16 +7,16 @@
       <tr>
         <th *ngFor="let head of headElementsPapers; let i = index" scope="col">
           <a
-            *ngIf="head !== 'citation'"
+            *ngIf="head !== 'citation' && head !== 'video'"
             [mdbTableSort]="papers"
             [sortBy]="headElementsPapers[i]"
           >
             {{ head | titlecase }}
           </a>
-          <a style="cursor: default" *ngIf="head === 'citation'">
+          <a style="cursor: default" *ngIf="head === 'citation' || head === 'video'">
             {{ head | titlecase }}</a
           >
-          <mdb-icon fas icon="sort" *ngIf="head !== 'citation'"></mdb-icon>
+          <mdb-icon fas icon="sort" *ngIf="head !== 'citation' && head !== 'video'"></mdb-icon>
         </th>
       </tr>
     </thead>
@@ -37,17 +37,22 @@
         <td>{{ paper.year }}</td>
         <td>
           <button
-            mdbBtn
-            type="button"
-            class="btn unique-color text-white"
-            outline="false"
+            class="btn-custom far fa-copy"
             mdbWavesEffect
             [cdkCopyToClipboard]="paper.citation"
             [cdkCopyToClipboardAttempts]="7"
             value="click to copy"
-          >
-            <mdb-icon far icon="copy"></mdb-icon></button
+          ></button
           ><br />
+        </td>
+        <td>
+            <a
+            *ngIf="paper.video != null"
+            href="{{ paper.video }}"
+            class="btn-custom fab fa-youtube"
+            target="_blank"
+            rel="noopener noreferrer"
+            ></a>
         </td>
       </tr>
     </tbody>
