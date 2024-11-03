@@ -2,6 +2,32 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
+  link: 'https://dl.acm.org/doi/10.1145/3678720.3685320',
+  title: 'Abstract Debugging with GobPie',
+  conference: 'DEBT@ISSTA',
+  year: 2024,
+  description: 'GobPie features abstract debugging, a novel approach to presenting static analysis results, which complements traditional debugging methods by making program analysis results visible.',
+  citation: '@inproceedings{10.1145/3678720.3685320,\n\
+    author = {Holter, Karoliine and Hennoste, Juhan Oskar and Saan, Simmo and Lam, Patrick and Vojdani, Vesal},\n\
+    title = {Abstract Debugging with GobPie},\n\
+    year = {2024},\n\
+    isbn = {9798400711107},\n\
+    publisher = {Association for Computing Machinery},\n\
+    address = {New York, NY, USA},\n\
+    url = {https://doi.org/10.1145/3678720.3685320},\n\
+    doi = {10.1145/3678720.3685320},\n\
+    abstract = {GobPie is an IDE integration designed to enhance the usability and explainability of the abstract interpretation-based static analyzer Goblint. GobPie features abstract debugging, a novel approach to presenting static analysis results, which complements traditional debugging methods by making program analysis results visible. Its goal is to help resolve rare but real software issues. Unlike traditional debugging, which proceeds step-by-step to observe concrete states, abstract debugging uses static analysis results to simulate the same steps, offering insights into all possible execution paths.},\n\
+    booktitle = {Proceedings of the 2nd ACM International Workshop on Future Debugging Techniques},\n\
+    pages = {32-33},\n\
+    numpages = {2},\n\
+    keywords = {Abstract Interpretation, Automated Software Verification, Data Race Detection, Explainability, Visualization},\n\
+    location = {Vienna, Austria},\n\
+    series = {DEBT 2024}\n\
+    }',
+  authors: ['K. Holter', 'J. O. Hennoste', 'S. Saan', 'P. Lam', 'V. Vojdani'],
+  video: 'https://youtu.be/KtLFdxMAdD8'
+  },
+  {
   link: 'https://dl.acm.org/doi/proceedings/10.1145/3652588',
   title: 'When to Stop Going Down the Rabbit Hole: Taming Context-Sensitivity on the Fly',
   conference: 'SOAP@PLDI',
