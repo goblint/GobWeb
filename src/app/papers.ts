@@ -2,6 +2,32 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
+  link: 'https://dl.acm.org/doi/10.1145/3689492.3690053',
+  title: 'Abstract Debuggers: Exploring Program Behaviors using Static Analysis Results',
+  conference: 'Onward!',
+  year: 2024,
+  description: 'Proposes a novel notion of abstract debuggers, which allow developers to explore abstract program states, as computed by sound static analyzers.',
+  citation: '@inproceedings{10.1145/3689492.3690053,\n\
+    author = {Holter, Karoliine and Hennoste, Juhan Oskar and Lam, Patrick and Saan, Simmo and Vojdani, Vesal},\n\
+    title = {Abstract Debuggers: Exploring Program Behaviors using Static Analysis Results},\n\
+    year = {2024},\n\
+    isbn = {9798400712159},\n\
+    publisher = {Association for Computing Machinery},\n\
+    address = {New York, NY, USA},\n\
+    url = {https://doi.org/10.1145/3689492.3690053},\n\
+    doi = {10.1145/3689492.3690053},\n\
+    abstract = {Traditional, or concrete, debuggers allow developers to step through programs and explore the corresponding concrete program states—developers can query current values of program variables. This exploration enables developers to formulate and refine hypotheses about program behaviors. We propose the novel notion of abstract debuggers, which allow developers to explore abstract program states, as computed by sound static analyzers. Giving developers the ability to interactively explore abstract states empowers them to work with hypotheses that are true for all program executions: they can examine and rule out false positives, or better understand a static analysis’s declaration that some code is indeed safe. Abstract debuggers’ interfaces, reminiscent of conventional debuggers, aim to make navigating and interpreting static analysis results more straightforward. We have formalized the concept, applied it by implementing a tool that leverages the static analyzer Goblint, and illustrate its usefulness through case studies.},\n\
+    booktitle = {Proceedings of the 2024 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software},\n\
+    pages = {130-146},\n\
+    numpages = {17},\n\
+    keywords = {Abstract Interpretation, Automated Software Verification, Data Race Detection, Explainability, Visualization},\n\
+    location = {Pasadena, CA, USA},\n\
+    series = {Onward! \'24},\n\
+    }',
+  authors: ['K. Holter', 'J. O. Hennoste', 'P. Lam', 'S. Saan', 'V. Vojdani'],
+  video: 'https://youtu.be/bxm53PA0MRA'
+  },
+  {
   link: 'https://dl.acm.org/doi/10.1145/3678720.3685320',
   title: 'Abstract Debugging with GobPie',
   conference: 'DEBT@ISSTA',
