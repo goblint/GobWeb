@@ -865,8 +865,8 @@ export const PAPERS: Paper[] = [
   {
   link: '/assets/papers/invariants.pdf',
   title: 'Global invariants for analysing multi-threaded applications',
-  conference: 'NWPT',
-  year: 2002,
+  conference: 'Proceedings of the Estonian Academy of Sciences. Physics. Mathematics',
+  year: 2003,
   description: 'Describes the underlying nested-fixpoint style thread-modular analysis engine that enables us to analyze multi-threaded programs soundly.',
   citation: '\@article\{Seidl03\,\n\
     author = \{Helmut Seidl and Varmo Vene and Markus M\{\\\"u\}ller-Olm\}\,\n\
