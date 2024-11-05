@@ -75,6 +75,28 @@ export const PAPERS: Paper[] = [
   video: null
   },
   {
+  link: 'https://link.springer.com/article/10.1007/s10009-024-00764-z',
+  title: 'When long jumps fall short: control-flow tracking and misuse detection for nonlocal jumps in C',
+  conference: 'STTT',
+  year: 2024,
+  description: 'Proposes a concrete semantics of a subset of C with setjmp/longjmp, where interprocedural longjmps are performed directly, as well as an equivalent formulation where such jumps are implemented via stack-unwinding at the call-sites.',
+  citation: '@article{10.1007/s10009-024-00764-z,\n\
+    author = {Julian Erhard and Michael Schwarz and Vesal Vojdani and Simmo Saan and Helmut Seidl},\n\
+    title = {When long jumps fall short: control-flow tracking and misuse detection for nonlocal jumps in C},\n\
+    journal = {International Journal on Software Tools for Technology Transfer},\n\
+    year = {2024},\n\
+    month = {08},\n\
+    pages = {589-605},\n\
+    publisher = {Springer Science and Business Media Deutschland GmbH},\n\
+    url = {https://link.springer.com/article/10.1007/s10009-024-00764-z},\n\
+    doi = {10.1007/s10009-024-00764-z},\n\
+    abstract = {The C programming language offers setjmp/ longjmp as a mechanism for nonlocal control flow. This mechanism has complicated semantics. As most developers do not encounter it day-to-day, they may be unfamiliar with all its intricacies – leading to subtle programming errors. At the same time, most static analyzers lack proper support, implying that otherwise sound tools miss whole classes of program deficiencies. We propose a concrete semantics of a subset of C with setjmp/ longjmp, where interprocedural longjmps are performed directly, as well as an equivalent formulation where such jumps are implemented via stack-unwinding at the call-sites. Reflecting this semantic equivalence, we propose an approach for lifting existing interprocedural analyses to support setjmp/ longjmp and to flag their misuse. To deal with the nonlocal semantics, our approach leverages side-effecting transfer functions, which, when executed, may additionally trigger contributions for program points that are not static control-flow successors. We showcase our analysis on a real-world example and propose a set of litmus tests for other analyzers.},\n\
+    keywords = {Abstract interpretation, Static analysis, setjmp/longjmp, Side-effecting constraint systems},\n\
+    }',
+  authors: ['J. Erhard', 'M.Schwarz', 'V. Vojdani', 'S. Saan', 'H. Seidl'],
+  video: null
+  },
+  {
   link: 'https://dl.acm.org/doi/proceedings/10.1145/3652588',
   title: 'When to Stop Going Down the Rabbit Hole: Taming Context-Sensitivity on the Fly',
   conference: 'SOAP@PLDI',
