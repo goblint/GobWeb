@@ -2,6 +2,127 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
+  link: 'https://dl.acm.org/doi/10.1145/3689609.3689994',
+  title: 'C-2PO: A Weakly Relational Pointer Domain: “These Are Not the Memory Cells You Are Looking For”',
+  conference: 'NSAD@SPLASH',
+  year: 2024,
+  description: 'Presents C-2PO — a weakly relational domain for C programs, which tracks must-equalities and -disequalities between pointer expressions.',
+  citation: '@inproceedings{10.1145/3689609.3689994,\n\
+    author = {Ghidini, Rebecca and Erhard, Julian and Schwarz, Michael and Seidl, Helmut},\n\
+    title = {C-2PO: A Weakly Relational Pointer Domain: “These Are Not the Memory Cells You Are Looking For”},\n\
+    year = {2024},\n\
+    isbn = {9798400712173},\n\
+    publisher = {Association for Computing Machinery},\n\
+    address = {New York, NY, USA},\n\
+    url = {https://doi.org/10.1145/3689609.3689994},\n\
+    doi = {10.1145/3689609.3689994},\n\
+    abstract = {Pointer analysis is foundational for statically analyzing real-world programs. We present C-2PO — a weakly relational domain for C programs, which tracks must-equalities and -disequalities between pointer expressions. This domain captures address arithmetic and its confinement to single memory objects, both core concepts in C. We implement the domain in Goblint and provide a preliminary evaluation. For 95\% of SV-COMP tasks, the slowdown incurred by adding C-2PO is below a factor of 3. To measure precision, we instrumented coreutil programs with assertions computed by C-2PO. For an existing non-relational pointer analysis, 80\% of the assertions are out of reach.},\n\
+    booktitle = {Proceedings of the 10th ACM SIGPLAN International Workshop on Numerical and Symbolic Abstract Domains},\n\
+    pages = {2-9},\n\
+    numpages = {8},\n\
+    keywords = {abstract interpretation, pointers, static analysis, weakly relational domains},\n\
+    location = {Pasadena, CA, USA},\n\
+    series = {NSAD \'24}\n\
+    }',
+  authors: ['R. Ghidini', 'J. Erhard', 'M. Schwarz', 'H. Seidl'],
+  video: null
+  },
+  {
+  link: 'https://dl.acm.org/doi/10.1145/3689492.3690053',
+  title: 'Abstract Debuggers: Exploring Program Behaviors using Static Analysis Results',
+  conference: 'Onward!',
+  year: 2024,
+  description: 'Proposes a novel notion of abstract debuggers, which allow developers to explore abstract program states, as computed by sound static analyzers.',
+  citation: '@inproceedings{10.1145/3689492.3690053,\n\
+    author = {Holter, Karoliine and Hennoste, Juhan Oskar and Lam, Patrick and Saan, Simmo and Vojdani, Vesal},\n\
+    title = {Abstract Debuggers: Exploring Program Behaviors using Static Analysis Results},\n\
+    year = {2024},\n\
+    isbn = {9798400712159},\n\
+    publisher = {Association for Computing Machinery},\n\
+    address = {New York, NY, USA},\n\
+    url = {https://doi.org/10.1145/3689492.3690053},\n\
+    doi = {10.1145/3689492.3690053},\n\
+    abstract = {Traditional, or concrete, debuggers allow developers to step through programs and explore the corresponding concrete program states—developers can query current values of program variables. This exploration enables developers to formulate and refine hypotheses about program behaviors. We propose the novel notion of abstract debuggers, which allow developers to explore abstract program states, as computed by sound static analyzers. Giving developers the ability to interactively explore abstract states empowers them to work with hypotheses that are true for all program executions: they can examine and rule out false positives, or better understand a static analysis’s declaration that some code is indeed safe. Abstract debuggers’ interfaces, reminiscent of conventional debuggers, aim to make navigating and interpreting static analysis results more straightforward. We have formalized the concept, applied it by implementing a tool that leverages the static analyzer Goblint, and illustrate its usefulness through case studies.},\n\
+    booktitle = {Proceedings of the 2024 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software},\n\
+    pages = {130-146},\n\
+    numpages = {17},\n\
+    keywords = {Abstract Interpretation, Automated Software Verification, Data Race Detection, Explainability, Visualization},\n\
+    location = {Pasadena, CA, USA},\n\
+    series = {Onward! \'24},\n\
+    }',
+  authors: ['K. Holter', 'J. O. Hennoste', 'P. Lam', 'S. Saan', 'V. Vojdani'],
+  video: 'https://youtu.be/bxm53PA0MRA'
+  },
+  {
+  link: 'https://dl.acm.org/doi/10.1145/3678720.3685320',
+  title: 'Abstract Debugging with GobPie',
+  conference: 'DEBT@ISSTA',
+  year: 2024,
+  description: 'GobPie features abstract debugging, a novel approach to presenting static analysis results, which complements traditional debugging methods by making program analysis results visible.',
+  citation: '@inproceedings{10.1145/3678720.3685320,\n\
+    author = {Holter, Karoliine and Hennoste, Juhan Oskar and Saan, Simmo and Lam, Patrick and Vojdani, Vesal},\n\
+    title = {Abstract Debugging with GobPie},\n\
+    year = {2024},\n\
+    isbn = {9798400711107},\n\
+    publisher = {Association for Computing Machinery},\n\
+    address = {New York, NY, USA},\n\
+    url = {https://doi.org/10.1145/3678720.3685320},\n\
+    doi = {10.1145/3678720.3685320},\n\
+    abstract = {GobPie is an IDE integration designed to enhance the usability and explainability of the abstract interpretation-based static analyzer Goblint. GobPie features abstract debugging, a novel approach to presenting static analysis results, which complements traditional debugging methods by making program analysis results visible. Its goal is to help resolve rare but real software issues. Unlike traditional debugging, which proceeds step-by-step to observe concrete states, abstract debugging uses static analysis results to simulate the same steps, offering insights into all possible execution paths.},\n\
+    booktitle = {Proceedings of the 2nd ACM International Workshop on Future Debugging Techniques},\n\
+    pages = {32-33},\n\
+    numpages = {2},\n\
+    keywords = {Abstract Interpretation, Automated Software Verification, Data Race Detection, Explainability, Visualization},\n\
+    location = {Vienna, Austria},\n\
+    series = {DEBT 2024}\n\
+    }',
+  authors: ['K. Holter', 'J. O. Hennoste', 'S. Saan', 'P. Lam', 'V. Vojdani'],
+  video: 'https://youtu.be/KtLFdxMAdD8'
+  },
+  {
+  link: 'https://link.springer.com/article/10.1007/s10009-024-00768-9',
+  title: 'Interactive abstract interpretation: reanalyzing multithreaded C programs for cheap',
+  conference: 'STTT',
+  year: 2024,
+  description: 'Proposes a framework for interactive abstract interpretation of multithreaded C code to put sound program analysis at the fingertips of the software developer.',
+  citation: '@article{Erhard2024,\n\
+    author = {Erhard, Julian and Saan, Simmo and Tilscher, Sarah and Schwarz, Michael and Holter, Karoliine and Vojdani, Vesal and Seidl, Helmut},\n\
+    title = {Interactive abstract interpretation: reanalyzing multithreaded C programs for cheap},\n\
+    journal = {International Journal on Software Tools for Technology Transfer},\n\
+    year = {2024},\n\
+    issn = {14332779},\n\
+    publisher = {Springer Science and Business Media Deutschland GmbH},\n\
+    url = {https://link.springer.com/article/10.1007/s10009-024-00768-9},\n\
+    doi = {10.1007/s10009-024-00768-9},\n\
+    abstract = {To put sound program analysis at the fingertips of the software developer, we propose a framework for interactive abstract interpretation of multithreaded C code. Abstract interpretation provides sound analysis results, but can be quite costly in general. To achieve quick response times, we incrementalize the analysis infrastructure, including postprocessing, without necessitating any modifications to the analysis specifications themselves. We rely on the local generic fixpoint engine TD – which we enhance with reluctant destabilization to minimize reanalysis effort. Dedicated further improvements support precise incremental analysis of program properties that include concurrency deficiencies such as data-races. The framework has been implemented in the static analyzer Goblint, and combined with the MagpieBridge framework to relay findings to IDEs. We evaluate our implementation w.r.t. the yard sticks of response time and consistency. We also provide examples of program development highlighting the usability of our approach.},\n\
+    keywords = {Static Analysis, Abstract Interpretation, Incremental Static Analysis},\n\
+    }',
+  authors: ['J. Erhard', 'S. Saan', 'S. Tilscher', 'M. Schwarz', 'K. Holter', 'V. Vojdani', 'H. Seidl'],
+  video: null
+  },
+  {
+  link: 'https://link.springer.com/article/10.1007/s10009-024-00764-z',
+  title: 'When long jumps fall short: control-flow tracking and misuse detection for nonlocal jumps in C',
+  conference: 'STTT',
+  year: 2024,
+  description: 'Proposes a concrete semantics of a subset of C with setjmp/longjmp, where interprocedural longjmps are performed directly, as well as an equivalent formulation where such jumps are implemented via stack-unwinding at the call-sites.',
+  citation: '@article{10.1007/s10009-024-00764-z,\n\
+    author = {Julian Erhard and Michael Schwarz and Vesal Vojdani and Simmo Saan and Helmut Seidl},\n\
+    title = {When long jumps fall short: control-flow tracking and misuse detection for nonlocal jumps in C},\n\
+    journal = {International Journal on Software Tools for Technology Transfer},\n\
+    year = {2024},\n\
+    month = {08},\n\
+    pages = {589-605},\n\
+    publisher = {Springer Science and Business Media Deutschland GmbH},\n\
+    url = {https://link.springer.com/article/10.1007/s10009-024-00764-z},\n\
+    doi = {10.1007/s10009-024-00764-z},\n\
+    abstract = {The C programming language offers setjmp/ longjmp as a mechanism for nonlocal control flow. This mechanism has complicated semantics. As most developers do not encounter it day-to-day, they may be unfamiliar with all its intricacies – leading to subtle programming errors. At the same time, most static analyzers lack proper support, implying that otherwise sound tools miss whole classes of program deficiencies. We propose a concrete semantics of a subset of C with setjmp/ longjmp, where interprocedural longjmps are performed directly, as well as an equivalent formulation where such jumps are implemented via stack-unwinding at the call-sites. Reflecting this semantic equivalence, we propose an approach for lifting existing interprocedural analyses to support setjmp/ longjmp and to flag their misuse. To deal with the nonlocal semantics, our approach leverages side-effecting transfer functions, which, when executed, may additionally trigger contributions for program points that are not static control-flow successors. We showcase our analysis on a real-world example and propose a set of litmus tests for other analyzers.},\n\
+    keywords = {Abstract interpretation, Static analysis, setjmp/longjmp, Side-effecting constraint systems},\n\
+    }',
+  authors: ['J. Erhard', 'M.Schwarz', 'V. Vojdani', 'S. Saan', 'H. Seidl'],
+  video: null
+  },
+  {
   link: 'https://dl.acm.org/doi/proceedings/10.1145/3652588',
   title: 'When to Stop Going Down the Rabbit Hole: Taming Context-Sensitivity on the Fly',
   conference: 'SOAP@PLDI',
@@ -813,8 +934,8 @@ export const PAPERS: Paper[] = [
   {
   link: '/assets/papers/invariants.pdf',
   title: 'Global invariants for analysing multi-threaded applications',
-  conference: 'NWPT',
-  year: 2002,
+  conference: 'Proceedings of the Estonian Academy of Sciences. Physics. Mathematics',
+  year: 2003,
   description: 'Describes the underlying nested-fixpoint style thread-modular analysis engine that enables us to analyze multi-threaded programs soundly.',
   citation: '\@article\{Seidl03\,\n\
     author = \{Helmut Seidl and Varmo Vene and Markus M\{\\\"u\}ller-Olm\}\,\n\
