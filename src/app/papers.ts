@@ -54,6 +54,27 @@ export const PAPERS: Paper[] = [
   video: 'https://youtu.be/KtLFdxMAdD8'
   },
   {
+  link: 'https://link.springer.com/article/10.1007/s10009-024-00768-9',
+  title: 'Interactive abstract interpretation: reanalyzing multithreaded C programs for cheap',
+  conference: 'STTT',
+  year: 2024,
+  description: 'Proposes a framework for interactive abstract interpretation of multithreaded C code to put sound program analysis at the fingertips of the software developer.',
+  citation: '@article{Erhard2024,\n\
+    author = {Erhard, Julian and Saan, Simmo and Tilscher, Sarah and Schwarz, Michael and Holter, Karoliine and Vojdani, Vesal and Seidl, Helmut},\n\
+    title = {Interactive abstract interpretation: reanalyzing multithreaded C programs for cheap},\n\
+    journal = {International Journal on Software Tools for Technology Transfer},\n\
+    year = {2024},\n\
+    issn = {14332779},\n\
+    publisher = {Springer Science and Business Media Deutschland GmbH},\n\
+    url = {https://link.springer.com/article/10.1007/s10009-024-00768-9},\n\
+    doi = {10.1007/s10009-024-00768-9},\n\
+    abstract = {To put sound program analysis at the fingertips of the software developer, we propose a framework for interactive abstract interpretation of multithreaded C code. Abstract interpretation provides sound analysis results, but can be quite costly in general. To achieve quick response times, we incrementalize the analysis infrastructure, including postprocessing, without necessitating any modifications to the analysis specifications themselves. We rely on the local generic fixpoint engine TD – which we enhance with reluctant destabilization to minimize reanalysis effort. Dedicated further improvements support precise incremental analysis of program properties that include concurrency deficiencies such as data-races. The framework has been implemented in the static analyzer Goblint, and combined with the MagpieBridge framework to relay findings to IDEs. We evaluate our implementation w.r.t. the yard sticks of response time and consistency. We also provide examples of program development highlighting the usability of our approach.},\n\
+    keywords = {Static Analysis, Abstract Interpretation, Incremental Static Analysis},\n\
+    }',
+  authors: ['J. Erhard', 'S. Saan', 'S. Tilscher', 'M. Schwarz', 'K. Holter', 'V. Vojdani', 'H. Seidl'],
+  video: null
+  },
+  {
   link: 'https://dl.acm.org/doi/proceedings/10.1145/3652588',
   title: 'When to Stop Going Down the Rabbit Hole: Taming Context-Sensitivity on the Fly',
   conference: 'SOAP@PLDI',
