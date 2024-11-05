@@ -2,6 +2,32 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
+  link: 'https://dl.acm.org/doi/10.1145/3689609.3689994',
+  title: 'C-2PO: A Weakly Relational Pointer Domain: “These Are Not the Memory Cells You Are Looking For”',
+  conference: 'NSAD@SPLASH',
+  year: 2024,
+  description: 'Presents C-2PO — a weakly relational domain for C programs, which tracks must-equalities and -disequalities between pointer expressions.',
+  citation: '@inproceedings{10.1145/3689609.3689994,\n\
+    author = {Ghidini, Rebecca and Erhard, Julian and Schwarz, Michael and Seidl, Helmut},\n\
+    title = {C-2PO: A Weakly Relational Pointer Domain: “These Are Not the Memory Cells You Are Looking For”},\n\
+    year = {2024},\n\
+    isbn = {9798400712173},\n\
+    publisher = {Association for Computing Machinery},\n\
+    address = {New York, NY, USA},\n\
+    url = {https://doi.org/10.1145/3689609.3689994},\n\
+    doi = {10.1145/3689609.3689994},\n\
+    abstract = {Pointer analysis is foundational for statically analyzing real-world programs. We present C-2PO — a weakly relational domain for C programs, which tracks must-equalities and -disequalities between pointer expressions. This domain captures address arithmetic and its confinement to single memory objects, both core concepts in C. We implement the domain in Goblint and provide a preliminary evaluation. For 95\% of SV-COMP tasks, the slowdown incurred by adding C-2PO is below a factor of 3. To measure precision, we instrumented coreutil programs with assertions computed by C-2PO. For an existing non-relational pointer analysis, 80\% of the assertions are out of reach.},\n\
+    booktitle = {Proceedings of the 10th ACM SIGPLAN International Workshop on Numerical and Symbolic Abstract Domains},\n\
+    pages = {2-9},\n\
+    numpages = {8},\n\
+    keywords = {abstract interpretation, pointers, static analysis, weakly relational domains},\n\
+    location = {Pasadena, CA, USA},\n\
+    series = {NSAD \'24}\n\
+    }',
+  authors: ['R. Ghidini', 'J. Erhard', 'M. Schwarz', 'H. Seidl'],
+  video: null
+  },
+  {
   link: 'https://dl.acm.org/doi/10.1145/3689492.3690053',
   title: 'Abstract Debuggers: Exploring Program Behaviors using Static Analysis Results',
   conference: 'Onward!',
