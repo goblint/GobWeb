@@ -353,7 +353,7 @@ export const PAPERS: Paper[] = [
     doi          = \{10.1145/3589250.3596140\}\,\n\
   \}\n',
   authors: ['M.Schwarz', 'J. Erhard', 'V. Vojdani', 'S. Saan', 'H. Seidl'],
-  video: null
+  video: 'https://youtu.be/nbnbLjxrtbM'
   },
   {
     link: 'https://link.springer.com/chapter/10.1007/978-3-031-30044-8_2',
