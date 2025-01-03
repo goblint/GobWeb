@@ -2,6 +2,28 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
+    link: 'https://link.springer.com/article/10.1007/s10009-024-00773-y',
+    title: 'The digest framework: concurrency-sensitivity for abstract interpretation',
+    conference: 'STTT',
+    year: 2024,
+    description: ' We propose the notion of concurrency-sensitivity, which determines how an analysis takes the computation history of a multi-threaded program into account to exclude spurious thread interactions. Just as for other form of sensitivity, such as flow-, context, and path-sensitivity, there is a trade-off to be made between precision and scalability. The choice of concurrency-sensitivity is typically hard-coded into the analysis. However, the suitability of a chosen sensitivity hinges on the program and property to be analyzed. We thus propose to decouple the concurrency-sensitivity from the analysis and realize this in a generic framework. The framework allows for the seamless incorporation of custom abstractions of the computation history of a thread, so-called digests, to exclude spurious thread interactions. While concrete digests track properties precisely, the framework enables further abstraction through abstract digests. These may decrease analysis cost while hopefully retaining precision for the property of interest. We propose digests that, e.g., track held mutexes, thread IDs, or observed events. Digests tailored to programming language features, such as condition variables or recursive mutexes, highlight the framework\'s versatility.',
+    citation: '@Article{Schwarz2024,\n\
+author="Schwarz, Michael\n\
+and Erhard, Julian",\n\
+title="The digest framework: concurrency-sensitivity for abstract interpretation",\n\
+journal="International Journal on Software Tools for Technology Transfer",\n\
+year="2024",\n\
+month="Dec",\n\
+day="28",\n\
+abstract="Thread-modular approaches to static analysis help mitigate the state space explosion encountered when analyzing multi-threaded programs. This is enabled by abstracting away some aspects of interactions between threads. We propose the notion of concurrency-sensitivity, which determines how an analysis takes the computation history of a multi-threaded program into account to exclude spurious thread interactions. Just as for other form of sensitivity, such as flow-, context, and path-sensitivity, there is a trade-off to be made between precision and scalability. The choice of concurrency-sensitivity is typically hard-coded into the analysis. However, the suitability of a chosen sensitivity hinges on the program and property to be analyzed. We thus propose to decouple the concurrency-sensitivity from the analysis and realize this in a generic framework. The framework allows for the seamless incorporation of custom abstractions of the computation history of a thread, so-called digests, to exclude spurious thread interactions. While concrete digests track properties precisely, the framework enables further abstraction through abstract digests. These may decrease analysis cost while hopefully retaining precision for the property of interest. We propose digests that, e.g., track held mutexes, thread IDs, or observed events. Digests tailored to programming language features, such as condition variables or recursive mutexes, highlight the framework\'s versatility.",\n\
+issn="1433-2787",\n\
+doi="10.1007/s10009-024-00773-y",\n\
+url="https://doi.org/10.1007/s10009-024-00773-y"\n\
+}',
+    authors: ['M. Schwarz', 'J. Erhard'],
+    video: null
+    },
+  {
   link: 'https://dl.acm.org/doi/10.1145/3689609.3689994',
   title: 'C-2PO: A Weakly Relational Pointer Domain: “These Are Not the Memory Cells You Are Looking For”',
   conference: 'NSAD@SPLASH',
