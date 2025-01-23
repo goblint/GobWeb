@@ -47,7 +47,7 @@ url="https://doi.org/10.1007/s10009-024-00773-y"\n\
     series = {NSAD \'24}\n\
     }',
   authors: ['R. Ghidini', 'J. Erhard', 'M. Schwarz', 'H. Seidl'],
-  video: null
+  video: "https://youtu.be/STgTRgd5uNM"
   },
   {
   link: 'https://dl.acm.org/doi/10.1145/3689492.3690053',
