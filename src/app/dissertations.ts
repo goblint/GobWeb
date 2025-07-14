@@ -1,7 +1,7 @@
 import { Dissertation } from './dissertation';
 
 export const DISSERTATIONS: Dissertation[] = [
-  { 
+  {
     link: 'http://www2.in.tum.de/bib/files/Vojdani10Thesis.pdf',
     title: 'Static Data Race Analysis of Heap-Manipulating C Programs',
     author: 'Vesal Vojdani',
@@ -9,7 +9,7 @@ export const DISSERTATIONS: Dissertation[] = [
     university: 'University of Tartu',
     date: 'December 2010.'
   },
-  { 
+  {
     link: 'http://www2.in.tum.de/bib/files/apinis14diss.pdf',
     title: 'Frameworks for analyzing multi-threaded C',
     author: 'Kalmer Apinis',
@@ -17,12 +17,20 @@ export const DISSERTATIONS: Dissertation[] = [
     university: 'Technische Universität München',
     date: 'June 2014'
   },
-  { 
+  {
     link: 'http://www2.in.tum.de/bib/files/diss-schwarz.pdf',
     title: 'Static Analysis of Embedded Software with Priority Scheduling and Interrupts',
     author: 'Martin Schwarz',
     description: 'PhD thesis',
     university: 'Technische Universität München',
     date: 'May 2014'
+  },
+  {
+    link: 'https://d-nb.info/137113345X/34',
+    title: 'Thread-Modular Abstract Interpretation: The Local Perspective',
+    author: 'Michael Schwarz',
+    description: 'PhD thesis',
+    university: 'Technische Universität München',
+    date: 'April 2024'
   }
 ];
