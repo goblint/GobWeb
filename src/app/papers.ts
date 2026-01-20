@@ -6,7 +6,7 @@ export const PAPERS: Paper[] = [
     title: 'Data Race Detection by Digest-Driven Abstract Interpretation',
     conference: 'VMCAI',
     year: 2026,
-    description: 'Presents a novel approach to data race detection using digest-driven abstract interpretation for concurrent programs.',
+    description: 'Presents the semantic foundations for the data race detection in Goblint.',
     citation: '@inproceedings{DBLP:conf/vmcai/SchwarzE2025,\n\
   author       = {Michael Schwarz and Julian Erhard},\n\
   title        = {Data Race Detection by Digest-Driven Abstract Interpretation},\n\
@@ -25,7 +25,7 @@ export const PAPERS: Paper[] = [
     title: 'Correctness Witnesses for Concurrent Programs: Bridging the Semantic Divide with Ghosts',
     conference: 'VMCAI',
     year: 2025,
-    description: 'Proposes a method for correctness witness validation in concurrent programs using ghost variables to bridge semantic gaps.',
+    description: 'Proposes ways to exchange correctness witnesses for concurrent programs being model checkers and abstract interpreters.',
     citation: '@inproceedings{DBLP:conf/vmcai/ErhardBHKSSSTV2025,\n\
   author       = {Julian Erhard and Manuel Bentele and Matthias Heizmann and Dominik Klumpp and Simmo Saan and Frank Schüssele and\n\
                   Michael Schwarz and\n\
