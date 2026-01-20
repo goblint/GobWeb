@@ -89,21 +89,28 @@ export const PAPERS: Paper[] = [
   },
   {
     link: 'https://dl.acm.org/doi/10.1145/3732933',
-    title: 'Sound Static Data Race Verification for C',
-    conference: 'OOPSLA',
-    year: 2024,
-    description: 'Presents a sound static verification approach for detecting data races in C programs using abstract interpretation.',
+    title: 'Sound Static Data Race Verification for C: Is the Race Lost?',
+    conference: 'TOPLAS',
+    year: 2025,
+    description: 'Investigates obstacles to sound static data race freedom verification for real-world C programs.',
     citation: '@article{10.1145/3732933,\n\
-  author       = {Michael Schwarz and Julian Erhard and Simmo Saan and Helmut Seidl},\n\
-  title        = {Sound Static Data Race Verification for C},\n\
-  journal      = {Proc. ACM Program. Lang.},\n\
-  volume       = {8},\n\
-  number       = {OOPSLA},\n\
-  year         = {2024},\n\
-  doi          = {10.1145/3732933},\n\
-  html         = {https://dl.acm.org/doi/10.1145/3732933}\n\
+  author = {Holter, Karoliine and Saan, Simmo and Lam, Patrick and Vojdani, Vesal},\n\
+  title = {Sound Static Data Race Verification for C: Is the Race Lost?},\n\
+  year = {2025},\n\
+  issue_date = {September 2025},\n\
+  publisher = {Association for Computing Machinery},\n\
+  address = {New York, NY, USA},\n\
+  volume = {47},\n\
+  number = {3},\n\
+  issn = {0164-0925},\n\
+  url = {https://doi.org/10.1145/3732933},\n\
+  doi = {10.1145/3732933},\n\
+  journal = {ACM Trans. Program. Lang. Syst.},\n\
+  month = sep,\n\
+  articleno = {11},\n\
+  numpages = {40}\n\
 }',
-    authors: ['M. Schwarz', 'J. Erhard', 'S. Saan', 'H. Seidl'],
+    authors: ['K. Holter', 'S. Saan', 'P. Lam', 'V. Vojdani'],
     video: null
   },
   {
