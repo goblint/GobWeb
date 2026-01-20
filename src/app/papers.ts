@@ -89,18 +89,19 @@ export const PAPERS: Paper[] = [
   },
   {
     link: 'https://dl.acm.org/doi/10.1145/3732933',
-    title: 'Sound Static Data Race Verification for C: Is the Race Lost?',
-    conference: 'TOPLAS@PLDI',
-    year: 2025,
+    title: 'Sound Static Data Race Verification for C',
+    conference: 'OOPSLA',
+    year: 2024,
     description: 'Presents a sound static verification approach for detecting data races in C programs using abstract interpretation.',
-    citation: '@article{SchwarzESS2025,\n\
+    citation: '@article{10.1145/3732933,\n\
   author       = {Michael Schwarz and Julian Erhard and Simmo Saan and Helmut Seidl},\n\
-  title        = {Sound Static Data Race Verification for C: Is the Race Lost?},\n\
-  journal      = {ACM Transactions on Programming Languages and Systems},\n\
-  year         = {2025},\n\
+  title        = {Sound Static Data Race Verification for C},\n\
+  journal      = {Proc. ACM Program. Lang.},\n\
+  volume       = {8},\n\
+  number       = {OOPSLA},\n\
+  year         = {2024},\n\
   doi          = {10.1145/3732933},\n\
-  html         = {https://dl.acm.org/doi/10.1145/3732933},\n\
-  note         = {To appear in PLDI 2025}\n\
+  html         = {https://dl.acm.org/doi/10.1145/3732933}\n\
 }',
     authors: ['M. Schwarz', 'J. Erhard', 'S. Saan', 'H. Seidl'],
     video: null
