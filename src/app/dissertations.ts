@@ -31,6 +31,6 @@ export const DISSERTATIONS: Dissertation[] = [
     author: 'Michael Schwarz',
     description: 'PhD thesis',
     university: 'Technische Universität München',
-    date: 'April 2024'
+    date: 'May 2025'
   }
 ];
