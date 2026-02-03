@@ -18,30 +18,7 @@ export const PAPERS: Paper[] = [
   code         = {http://dx.doi.org/10.5281/zenodo.17128591}\n\
 }',
     authors: ['M. Schwarz', 'J. Erhard'],
-    video: null
-  },
-  {
-    link: 'https://link.springer.com/chapter/10.1007/978-3-031-82700-6_4',
-    title: 'Correctness Witnesses for Concurrent Programs: Bridging the Semantic Divide with Ghosts',
-    conference: 'VMCAI',
-    year: 2025,
-    description: 'Proposes ways to exchange correctness witnesses for concurrent programs being model checkers and abstract interpreters.',
-    citation: '@inproceedings{DBLP:conf/vmcai/ErhardBHKSSSTV2025,\n\
-  author       = {Julian Erhard and Manuel Bentele and Matthias Heizmann and Dominik Klumpp and Simmo Saan and Frank Schüssele and\n\
-                  Michael Schwarz and\n\
-                  Helmut Seidl and\n\
-                  Sarah Tilscher and\n\
-                  Vesal Vojdani},\n\
-  title        = {Correctness Witnesses for Concurrent Programs: Bridging the Semantic Divide with Ghosts},\n\
-  booktitle    = {Verification, Model Checking, and Abstract Interpretation},\n\
-  series       = {Lecture Notes in Computer Science},\n\
-  year         = {2025},\n\
-  month        = {Jan},\n\
-  html         = {https://link.springer.com/chapter/10.1007/978-3-031-82700-6_4},\n\
-  code         = {https://zenodo.org/records/13863579}\n\
-}',
-    authors: ['J. Erhard', 'M. Bentele', 'M. Heizmann', 'D. Klumpp', 'S. Saan', 'F. Schüssele', 'M. Schwarz', 'H. Seidl', 'S. Tilscher', 'V. Vojdani'],
-    video: null
+    video: 'https://www.youtube.com/watch?v=49wrVvMJlQg'
   },
   {
     link: 'https://dl.acm.org/doi/10.1145/3729297',
@@ -62,7 +39,7 @@ export const PAPERS: Paper[] = [
   code         = {https://doi.org/10.5281/zenodo.15047000}\n\
 }',
     authors: ['F. Stemmler', 'M. Schwarz', 'J. Erhard', 'S. Tilscher', 'H. Seidl'],
-    video: null
+    video: 'https://www.youtube.com/watch?v=hISvCfbrbZc'
   },
   {
     link: 'https://doi.org/10.1007/s10009-025-00803-3',
@@ -112,6 +89,29 @@ export const PAPERS: Paper[] = [
 }',
     authors: ['K. Holter', 'S. Saan', 'P. Lam', 'V. Vojdani'],
     video: null
+  },
+  {
+    link: 'https://link.springer.com/chapter/10.1007/978-3-031-82700-6_4',
+    title: 'Correctness Witnesses for Concurrent Programs: Bridging the Semantic Divide with Ghosts',
+    conference: 'VMCAI',
+    year: 2025,
+    description: 'Proposes ways to exchange correctness witnesses for concurrent programs being model checkers and abstract interpreters.',
+    citation: '@inproceedings{DBLP:conf/vmcai/ErhardBHKSSSTV2025,\n\
+  author       = {Julian Erhard and Manuel Bentele and Matthias Heizmann and Dominik Klumpp and Simmo Saan and Frank Schüssele and\n\
+                  Michael Schwarz and\n\
+                  Helmut Seidl and\n\
+                  Sarah Tilscher and\n\
+                  Vesal Vojdani},\n\
+  title        = {Correctness Witnesses for Concurrent Programs: Bridging the Semantic Divide with Ghosts},\n\
+  booktitle    = {Verification, Model Checking, and Abstract Interpretation},\n\
+  series       = {Lecture Notes in Computer Science},\n\
+  year         = {2025},\n\
+  month        = {Jan},\n\
+  html         = {https://link.springer.com/chapter/10.1007/978-3-031-82700-6_4},\n\
+  code         = {https://zenodo.org/records/13863579}\n\
+}',
+    authors: ['J. Erhard', 'M. Bentele', 'M. Heizmann', 'D. Klumpp', 'S. Saan', 'F. Schüssele', 'M. Schwarz', 'H. Seidl', 'S. Tilscher', 'V. Vojdani'],
+    video: 'https://www.youtube.com/watch?v=S07bY5EqWBg'
   },
   {
     link: 'https://link.springer.com/article/10.1007/s10009-024-00773-y',
