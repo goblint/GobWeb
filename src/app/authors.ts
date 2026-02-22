@@ -20,6 +20,12 @@ export const AUTHORS: Author[] = [
     university: "University of Tartu"
   },
   {
+    firstName: "Ali Rasim",
+    lastName: "Koçal",
+    role: "Contributor",
+    university: "Technical University of Munich"
+  },
+  {
     firstName: "Michael",
     lastName: "Petter",
     role: "Contributor",
@@ -35,7 +41,7 @@ export const AUTHORS: Author[] = [
     firstName: "Michael",
     lastName: "Schwarz",
     role: "Contributor \& Maintainer",
-    university: "Technical University of Munich"
+    university: "National University of Singapore"
   },
   {
     firstName: "Helmut",

@@ -2,11 +2,123 @@ import { Paper } from './paper';
 
 export const PAPERS: Paper[] = [
   {
+    link: 'https://link.springer.com/chapter/10.1007/978-3-032-15700-3_15',
+    title: 'Data Race Detection by Digest-Driven Abstract Interpretation',
+    conference: 'VMCAI',
+    year: 2026,
+    description: 'Presents the semantic foundations for the data race detection in Goblint.',
+    citation: '@inproceedings{DBLP:conf/vmcai/SchwarzE2025,\n\
+  author       = {Michael Schwarz and Julian Erhard},\n\
+  title        = {Data Race Detection by Digest-Driven Abstract Interpretation},\n\
+  booktitle    = {Verification, Model Checking, and Abstract Interpretation},\n\
+  series       = {Lecture Notes in Computer Science},\n\
+  year         = {2026},\n\
+  month        = {Jan},\n\
+  html         = {https://link.springer.com/chapter/10.1007/978-3-032-15700-3_15},\n\
+  code         = {http://dx.doi.org/10.5281/zenodo.17128591}\n\
+}',
+    authors: ['M. Schwarz', 'J. Erhard'],
+    video: 'https://www.youtube.com/watch?v=49wrVvMJlQg'
+  },
+  {
+    link: 'https://dl.acm.org/doi/10.1145/3729297',
+    title: 'Taking out the Toxic Trash: Recovering Precision in Mixed Flow-Sensitive Static Analyses',
+    conference: 'PLDI',
+    year: 2025,
+    description: 'Presents techniques for recovering precision in static analyses that mix flow-sensitive and flow-insensitive approaches.',
+    citation: '@article{Stemmler25,\n\
+  author       = {Fabian Stemmler and Michael Schwarz and Julian Erhard and Sarah Tilscher and\n\
+                  Helmut Seidl},\n\
+  title        = {Taking out the Toxic Trash: Recovering Precision in Mixed Flow-Sensitive Static Analyses},\n\
+  journal      = {Proc. {ACM} Program. Lang.},\n\
+  volume       = {9},\n\
+  number       = {{PLDI}},\n\
+  year         = {2025},\n\
+  month        = {Jun},\n\
+  html         = {https://dl.acm.org/doi/10.1145/3729297},\n\
+  code         = {https://doi.org/10.5281/zenodo.15047000}\n\
+}',
+    authors: ['F. Stemmler', 'M. Schwarz', 'J. Erhard', 'S. Tilscher', 'H. Seidl'],
+    video: 'https://www.youtube.com/watch?v=hISvCfbrbZc'
+  },
+  {
+    link: 'https://doi.org/10.1007/s10009-025-00803-3',
+    title: 'Context Gas and friends: taming context-sensitivity on the fly',
+    conference: 'STTT',
+    year: 2025,
+    description: 'Extends the framework for context-sensitivity with novel techniques to bound context explosion dynamically during analysis.',
+    citation: '@Article{Erhard2025,\n\
+  author       = {Erhard, Julian\n\
+  and Schinabeck, Johanna Franziska\n\
+  and Schwarz, Michael\n\
+  and Seidl, Helmut},\n\
+  title        = {Context Gas and friends: taming context-sensitivity on the fly},\n\
+  journal      = {International Journal on Software Tools for Technology Transfer},\n\
+  year         = {2025},\n\
+  month        = {May},\n\
+  issn         = {1433-2787},\n\
+  doi          = {10.1007/s10009-025-00803-3},\n\
+  html         = {https://doi.org/10.1007/s10009-025-00803-3},\n\
+  code         = {https://zenodo.org/records/15118373}\n\
+}',
+    authors: ['J. Erhard', 'J. F. Schinabeck', 'M. Schwarz', 'H. Seidl'],
+    video: null
+  },
+  {
+    link: 'https://dl.acm.org/doi/10.1145/3732933',
+    title: 'Sound Static Data Race Verification for C: Is the Race Lost?',
+    conference: 'TOPLAS',
+    year: 2025,
+    description: 'Investigates obstacles to sound static data race freedom verification for real-world C programs.',
+    citation: '@article{10.1145/3732933,\n\
+  author = {Holter, Karoliine and Saan, Simmo and Lam, Patrick and Vojdani, Vesal},\n\
+  title = {Sound Static Data Race Verification for C: Is the Race Lost?},\n\
+  year = {2025},\n\
+  issue_date = {September 2025},\n\
+  publisher = {Association for Computing Machinery},\n\
+  address = {New York, NY, USA},\n\
+  volume = {47},\n\
+  number = {3},\n\
+  issn = {0164-0925},\n\
+  url = {https://doi.org/10.1145/3732933},\n\
+  doi = {10.1145/3732933},\n\
+  journal = {ACM Trans. Program. Lang. Syst.},\n\
+  month = sep,\n\
+  articleno = {11},\n\
+  numpages = {40}\n\
+}',
+    authors: ['K. Holter', 'S. Saan', 'P. Lam', 'V. Vojdani'],
+    video: null
+  },
+  {
+    link: 'https://link.springer.com/chapter/10.1007/978-3-031-82700-6_4',
+    title: 'Correctness Witnesses for Concurrent Programs: Bridging the Semantic Divide with Ghosts',
+    conference: 'VMCAI',
+    year: 2025,
+    description: 'Proposes ways to exchange correctness witnesses for concurrent programs being model checkers and abstract interpreters.',
+    citation: '@inproceedings{DBLP:conf/vmcai/ErhardBHKSSSTV2025,\n\
+  author       = {Julian Erhard and Manuel Bentele and Matthias Heizmann and Dominik Klumpp and Simmo Saan and Frank Schüssele and\n\
+                  Michael Schwarz and\n\
+                  Helmut Seidl and\n\
+                  Sarah Tilscher and\n\
+                  Vesal Vojdani},\n\
+  title        = {Correctness Witnesses for Concurrent Programs: Bridging the Semantic Divide with Ghosts},\n\
+  booktitle    = {Verification, Model Checking, and Abstract Interpretation},\n\
+  series       = {Lecture Notes in Computer Science},\n\
+  year         = {2025},\n\
+  month        = {Jan},\n\
+  html         = {https://link.springer.com/chapter/10.1007/978-3-031-82700-6_4},\n\
+  code         = {https://zenodo.org/records/13863579}\n\
+}',
+    authors: ['J. Erhard', 'M. Bentele', 'M. Heizmann', 'D. Klumpp', 'S. Saan', 'F. Schüssele', 'M. Schwarz', 'H. Seidl', 'S. Tilscher', 'V. Vojdani'],
+    video: 'https://www.youtube.com/watch?v=S07bY5EqWBg'
+  },
+  {
     link: 'https://link.springer.com/article/10.1007/s10009-024-00773-y',
     title: 'The digest framework: concurrency-sensitivity for abstract interpretation',
     conference: 'STTT',
     year: 2024,
-    description: ' We propose the notion of concurrency-sensitivity, which determines how an analysis takes the computation history of a multi-threaded program into account to exclude spurious thread interactions. Just as for other form of sensitivity, such as flow-, context, and path-sensitivity, there is a trade-off to be made between precision and scalability. The choice of concurrency-sensitivity is typically hard-coded into the analysis. However, the suitability of a chosen sensitivity hinges on the program and property to be analyzed. We thus propose to decouple the concurrency-sensitivity from the analysis and realize this in a generic framework. The framework allows for the seamless incorporation of custom abstractions of the computation history of a thread, so-called digests, to exclude spurious thread interactions. While concrete digests track properties precisely, the framework enables further abstraction through abstract digests. These may decrease analysis cost while hopefully retaining precision for the property of interest. We propose digests that, e.g., track held mutexes, thread IDs, or observed events. Digests tailored to programming language features, such as condition variables or recursive mutexes, highlight the framework\'s versatility.',
+    description: 'We propose the notion of concurrency-sensitivity, which determines how an analysis takes the computation history of a multi-threaded program into account to exclude spurious thread interactions. We decouple the concurrency-sensitivity from the analysis and realize this in a generic framework using custom abstractions called digests.',
     citation: '@Article{Schwarz2024,\n\
 author="Schwarz, Michael\n\
 and Erhard, Julian",\n\
