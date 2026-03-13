@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { GoblintComponent } from './goblint/goblint.component';
+import { TutorialComponent } from './tutorial/tutorial.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { GoblintComponent } from './goblint/goblint.component';
     NavbarComponent,
     AuthorsComponent,
     PagenotfoundComponent,
-    GoblintComponent
+    TutorialComponent
   ],
   imports: [
     BrowserModule,
