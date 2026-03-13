@@ -1,0 +1,49 @@
+<div class="row d-flex justify-content-center">
+  <h2 class="m-5">Mixed Flow-Sensitive Static Analysis: Engineering Modularity</h2>
+</div>
+
+<div class="row d-flex justify-content-center">
+  <p>
+    Helmut Seidl<sup>1</sup>, Vesal Vojdani<sup>2</sup>, Julian Erhard<sup>3</sup>, and Michael Schwarz<sup>4</sup>
+  </p>
+</div>
+
+<div class="row d-flex justify-content-center">
+  <p>
+    <sup>1</sup>Technical University of Munich,
+    <sup>2</sup>University of Tartu,
+    <sup>3</sup>CISPA Helmholtz Center for Information Security,
+    <sup>4</sup>National University of Singapore
+  </p>
+</div>
+
+<div class="row d-flex justify-content-center mt-4">
+  <p>
+    Welcome to our tutorial at FM 2026. Closer to the date, we will publish useful information,
+    such as an instruction on how to install Goblint.
+  </p>
+  <p><strong>We're looking forward to you joining us.</strong></p>
+</div>
+
+<div class="row d-flex justify-content-center mt-4">
+  <p class="text-justify">
+    Flow-sensitive and flow-insensitive analyses of programs occupy different ends of a spectrum.
+    Between these extremes lie mixed flow-sensitive approaches, where some aspects of program
+    behavior are analyzed flow-insensitively and others flow-sensitively. Mixed flow-sensitivity
+    arises, for example, in the analysis of multi-threaded code or code with non-local control flow.
+    Another instance is global store widening for efficient analysis of functional languages and some
+    forms of pointer analysis. While mixed flow-sensitive analyses are common in the literature, the
+    formulation of the particular analysis problem and the means to solve it are often tightly
+    coupled. Side-effecting constraint systems provide a generic mechanism for describing mixed
+    flow-sensitive analyses, thus decoupling the analysis definition from solver algorithm details.
+    The abstract interpreter Goblint realizes this decoupling, and allows defining mixed
+    flow-sensitive analyses independently of generic solvers. We indicate how the precision of
+    specified analyses can be improved using digests (on the side of the formulation of the analysis
+    problem) and suitable update rules (on the side of the solver). We explain how developers can
+    use Goblint to implement their own mixed flow-sensitive analyses.
+  </p>
+</div>
+
+<div class="row d-flex justify-content-center mt-4">
+  <img src="assets/images/goblin.png" alt="Goblint mascot">
+</div>
