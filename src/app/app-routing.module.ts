@@ -6,6 +6,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { PapersComponent } from './papers/papers.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { GoblintComponent } from './goblint/goblint.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent  },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'overview', component: OverviewComponent },
   { path: 'papers', component: PapersComponent },
   { path: 'people', component: AuthorsComponent },
+  { path: 'goblint', component: GoblintComponent },
   { path: '**', component: PagenotfoundComponent }
 ];
 
