@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'overview', component: OverviewComponent },
   { path: 'papers', component: PapersComponent },
   { path: 'people', component: AuthorsComponent },
-  { path: 'goblint', component: GoblintComponent },
+  { path: 'tutorial', component: GoblintComponent },
   { path: '**', component: PagenotfoundComponent }
 ];
 
