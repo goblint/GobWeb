@@ -7,7 +7,7 @@ export const DISSERTATIONS: Dissertation[] = [
     author: 'Vesal Vojdani',
     description: 'PhD thesis',
     university: 'University of Tartu',
-    date: 'December 2010.'
+    date: 'December 2010'
   },
   {
     link: 'http://www2.in.tum.de/bib/files/apinis14diss.pdf',
