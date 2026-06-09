@@ -2,12 +2,20 @@ import { Dissertation } from './dissertation';
 
 export const DISSERTATIONS: Dissertation[] = [
   {
-    link: 'http://www2.in.tum.de/bib/files/Vojdani10Thesis.pdf',
-    title: 'Static Data Race Analysis of Heap-Manipulating C Programs',
-    author: 'Vesal Vojdani',
+    link: 'https://hdl.handle.net/10062/120144',
+    title: 'Correctness Witnesses for Thread-Modular Program Analysis',
+    author: 'Simmo Saan',
     description: 'PhD thesis',
     university: 'University of Tartu',
-    date: 'December 2010'
+    date: 'April 2026'
+  },
+  {
+    link: 'https://d-nb.info/137113345X/34',
+    title: 'Thread-Modular Abstract Interpretation: The Local Perspective',
+    author: 'Michael Schwarz',
+    description: 'PhD thesis',
+    university: 'Technische Universität München',
+    date: 'April 2025'
   },
   {
     link: 'http://www2.in.tum.de/bib/files/apinis14diss.pdf',
@@ -26,19 +34,11 @@ export const DISSERTATIONS: Dissertation[] = [
     date: 'May 2014'
   },
   {
-    link: 'https://d-nb.info/137113345X/34',
-    title: 'Thread-Modular Abstract Interpretation: The Local Perspective',
-    author: 'Michael Schwarz',
-    description: 'PhD thesis',
-    university: 'Technische Universität München',
-    date: 'April 2025'
-  },
-  {
-    link: 'https://hdl.handle.net/10062/120144',
-    title: 'Correctness Witnesses for Thread-Modular Program Analysis',
-    author: 'Simmo Saan',
+    link: 'http://www2.in.tum.de/bib/files/Vojdani10Thesis.pdf',
+    title: 'Static Data Race Analysis of Heap-Manipulating C Programs',
+    author: 'Vesal Vojdani',
     description: 'PhD thesis',
     university: 'University of Tartu',
-    date: 'April 2026'
+    date: 'December 2010'
   }
 ];
