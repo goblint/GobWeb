@@ -32,5 +32,13 @@ export const DISSERTATIONS: Dissertation[] = [
     description: 'PhD thesis',
     university: 'Technische Universität München',
     date: 'April 2025'
+  },
+  {
+    link: 'https://hdl.handle.net/10062/120144',
+    title: 'Correctness Witnesses for Thread-Modular Program Analysis',
+    author: 'Simmo Saan',
+    description: 'PhD thesis',
+    university: 'University of Tartu',
+    date: 'April 2026'
   }
 ];
